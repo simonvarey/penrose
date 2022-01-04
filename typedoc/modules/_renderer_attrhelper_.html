@@ -80,6 +80,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attralignmentbaseline" class="tsd-kind-icon">attr<wbr>Alignment<wbr>Baseline</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrautofillsvg" class="tsd-kind-icon">attr<wbr>Auto<wbr>Fill<wbr>Svg</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrcenter" class="tsd-kind-icon">attr<wbr>Center</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrfill" class="tsd-kind-icon">attr<wbr>Fill</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrfontfamily" class="tsd-kind-icon">attr<wbr>Font<wbr>Family</a></li>
@@ -89,10 +90,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrfontstyle" class="tsd-kind-icon">attr<wbr>Font<wbr>Style</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrfontvariant" class="tsd-kind-icon">attr<wbr>Font<wbr>Variant</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrfontweight" class="tsd-kind-icon">attr<wbr>Font<wbr>Weight</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrnofill" class="tsd-kind-icon">attr<wbr>NoFill</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attropacity" class="tsd-kind-icon">attr<wbr>Opacity</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrpathdata" class="tsd-kind-icon">attr<wbr>Path<wbr>Data</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrpathlength" class="tsd-kind-icon">attr<wbr>Path<wbr>Length</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrpoints" class="tsd-kind-icon">attr<wbr>Points</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrpolycenter" class="tsd-kind-icon">attr<wbr>Poly<wbr>Center</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_attrhelper_.html#attrradii" class="tsd-kind-icon">attr<wbr>Radii</a></li>
@@ -125,7 +124,7 @@
 					<div class="tsd-signature tsd-kind-icon">DASH_<wbr>ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"7,5"</span><span class="tsd-signature-symbol"> = &quot;7,5&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L215">packages/core/src/renderer/AttrHelper.ts:215</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L361">packages/core/src/renderer/AttrHelper.ts:361</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,647 +135,18 @@
 					<a name="attralignmentbaseline" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Alignment<wbr>Baseline</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Alignment<wbr>Baseline<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Alignment<wbr>Baseline<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L354">packages/core/src/renderer/AttrHelper.ts:354</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrcenter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Center</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Center<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L32">packages/core/src/renderer/AttrHelper.ts:32</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>canvasSize: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfill" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Fill</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Fill<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L13">packages/core/src/renderer/AttrHelper.ts:13</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontfamily" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Family</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Family<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L298">packages/core/src/renderer/AttrHelper.ts:298</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontsize" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Size</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Size<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L305">packages/core/src/renderer/AttrHelper.ts:305</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontsizeadjust" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Size<wbr>Adjust</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Size<wbr>Adjust<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L312">packages/core/src/renderer/AttrHelper.ts:312</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontstretch" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Stretch</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Stretch<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L319">packages/core/src/renderer/AttrHelper.ts:319</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontstyle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Style</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Style<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L326">packages/core/src/renderer/AttrHelper.ts:326</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontvariant" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Variant</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Variant<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L333">packages/core/src/renderer/AttrHelper.ts:333</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrfontweight" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Weight</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Weight<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L340">packages/core/src/renderer/AttrHelper.ts:340</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrnofill" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>NoFill</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>NoFill<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L23">packages/core/src/renderer/AttrHelper.ts:23</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attropacity" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Opacity</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Opacity<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L27">packages/core/src/renderer/AttrHelper.ts:27</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrpathdata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Path<wbr>Data</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Path<wbr>Data<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L204">packages/core/src/renderer/AttrHelper.ts:204</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrpathlength" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Path<wbr>Length</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Path<wbr>Length<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L164">packages/core/src/renderer/AttrHelper.ts:164</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrpoints" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Points</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Points<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L193">packages/core/src/renderer/AttrHelper.ts:193</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrpolycenter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Poly<wbr>Center</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Poly<wbr>Center<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L43">packages/core/src/renderer/AttrHelper.ts:43</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>canvasSize: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrradii" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Radii</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Radii<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L179">packages/core/src/renderer/AttrHelper.ts:179</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrradius" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Radius</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Radius<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L159">packages/core/src/renderer/AttrHelper.ts:159</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrradiusx" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>RadiusX</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>RadiusX<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L169">packages/core/src/renderer/AttrHelper.ts:169</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrradiusy" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>RadiusY</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>RadiusY<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L174">packages/core/src/renderer/AttrHelper.ts:174</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="attrrotation" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Rotation</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Rotation<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, center<span class="tsd-signature-symbol">: </span><a href="_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, w<span class="tsd-signature-symbol">: </span><a href="_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, h<span class="tsd-signature-symbol">: </span><a href="_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L119">packages/core/src/renderer/AttrHelper.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L603">packages/core/src/renderer/AttrHelper.ts:603</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Rotates a GPI by n degrees about a center
-										Note: elem must be <code>transform</code>able
-										NOTE: must be called before transform translate coords (matrix rules)
-									<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform</a></p>
+									<p>Maps alignmentBaseline --&gt; alignment-baseline</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -790,13 +160,82 @@
 									</ul>
 								</li>
 								<li>
-									<h5>center: <a href="_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrautofillsvg" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Auto<wbr>Fill<wbr>Svg</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Auto<wbr>Fill<wbr>Svg<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span>, attrAlreadyMapped<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L12">packages/core/src/renderer/AttrHelper.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Auto-maps any input properties for which we lack specific logic over to the SVG output.</p>
+								</div>
+								<p>Note: Right now we are neither validating the SVG attributes or their contents.  The initial
+									thinking is to add a validator to the end of the pipeline rather than implement validation
+								for all passthrough SVG properties inside Penrose.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
-									<h5>w: <a href="_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 								<li>
-									<h5>h: <a href="_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>attrAlreadyMapped: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrcenter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Center</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Center<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L72">packages/core/src/renderer/AttrHelper.ts:72</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps center --&gt; cx, cy</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5>canvasSize: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
@@ -805,7 +244,640 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfill" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Fill</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Fill<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L43">packages/core/src/renderer/AttrHelper.ts:43</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps color --&gt; fill, fill-opacity</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontfamily" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Family</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Family<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L490">packages/core/src/renderer/AttrHelper.ts:490</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Map fontFamily --&gt; font-family</p>
+								</div>
+								<p>The attributes below cover all of the attributes allowed
+									in an SVG <text> element.  Note, however, that many of
+										these attributes may not be properly rendered by a given
+										program (e.g., browser or vector graphics editor).  For
+										instance, Chrome currently does not support attributes
+								like font-stretch, even though Adobe Illustrator does.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontsize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Size<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L505">packages/core/src/renderer/AttrHelper.ts:505</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps fontSize --&gt; font-size</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontsizeadjust" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Size<wbr>Adjust</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Size<wbr>Adjust<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L519">packages/core/src/renderer/AttrHelper.ts:519</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps fontSizeAdjust --&gt; font-size-adjust</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontstretch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Stretch</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Stretch<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L533">packages/core/src/renderer/AttrHelper.ts:533</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps fontStretch --&gt; font-stretch</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontstyle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Style</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Style<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L547">packages/core/src/renderer/AttrHelper.ts:547</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps fontStyle --&gt; font-style</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontvariant" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Variant</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Variant<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L561">packages/core/src/renderer/AttrHelper.ts:561</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps fontVariant --&gt; font-variant</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrfontweight" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Font<wbr>Weight</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Font<wbr>Weight<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L575">packages/core/src/renderer/AttrHelper.ts:575</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps fontWeight --&gt; font-weight</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attropacity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Opacity</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Opacity<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L60">packages/core/src/renderer/AttrHelper.ts:60</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps opacity --&gt; opacity</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrpathdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Path<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Path<wbr>Data<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L337">packages/core/src/renderer/AttrHelper.ts:337</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps data --&gt; d</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Points<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L313">packages/core/src/renderer/AttrHelper.ts:313</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps points --&gt; points</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrpolycenter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Poly<wbr>Center</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Poly<wbr>Center<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L90">packages/core/src/renderer/AttrHelper.ts:90</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If center is present:</p>
+									<ul>
+										<li>Maps center --&gt; cx, cy
+										Else</li>
+										<li>Maps points --&gt; cx, cy</li>
+									</ul>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>canvasSize: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrradii" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Radii</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Radii<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L286">packages/core/src/renderer/AttrHelper.ts:286</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps rx, ry --&gt; rx, ry</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrradius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Radius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Radius<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L247">packages/core/src/renderer/AttrHelper.ts:247</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps r --&gt; r</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrradiusx" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>RadiusX</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>RadiusX<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L260">packages/core/src/renderer/AttrHelper.ts:260</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps rx --&gt; rx</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrradiusy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>RadiusY</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>RadiusY<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L273">packages/core/src/renderer/AttrHelper.ts:273</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps ry --&gt; ry</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="attrrotation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Rotation</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Rotation<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L192">packages/core/src/renderer/AttrHelper.ts:192</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps center, w (or side), h (or side), rotation --&gt; transform !!!</p>
+								</div>
+								<p>Rotates a GPI by n degrees about a center
+									Note: elem must be <code>transform</code>able
+									NOTE: must be called before transform translate coords (matrix rules)
+								<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform</a></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>canvasSize: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
+								</li>
+								<li>
+									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -813,15 +885,20 @@
 					<a name="attrscale" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Scale</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Scale<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Scale<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L74">packages/core/src/renderer/AttrHelper.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L130">packages/core/src/renderer/AttrHelper.ts:130</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps scale --&gt; transform</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -836,7 +913,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -844,15 +921,20 @@
 					<a name="attrside" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Side</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Side<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Side<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L198">packages/core/src/renderer/AttrHelper.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L326">packages/core/src/renderer/AttrHelper.ts:326</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps side --&gt; width, height</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -867,7 +949,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -875,15 +957,20 @@
 					<a name="attrsidecoords" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Side<wbr>Coords</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Side<wbr>Coords<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Side<wbr>Coords<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L142">packages/core/src/renderer/AttrHelper.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L225">packages/core/src/renderer/AttrHelper.ts:225</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps center, side --&gt; transform</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -901,7 +988,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -909,15 +996,20 @@
 					<a name="attrstring" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>String</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>String<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>String<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L209">packages/core/src/renderer/AttrHelper.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L350">packages/core/src/renderer/AttrHelper.ts:350</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps string --&gt; new TextNode</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -932,7 +1024,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -940,15 +1032,23 @@
 					<a name="attrstroke" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Stroke</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Stroke<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Stroke<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L217">packages/core/src/renderer/AttrHelper.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L369">packages/core/src/renderer/AttrHelper.ts:369</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps strokeColor --&gt; stroke, stroke-opacity
+										strokeWidth --&gt; stroke-width
+										strokeDashArray, strokeStyle --&gt; stroke-dasharray
+									strokeLineCap --&gt; stroke-linecap</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -963,7 +1063,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -971,15 +1071,28 @@
 					<a name="attrstyle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Style</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Style<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Style<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L280">packages/core/src/renderer/AttrHelper.ts:280</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L465">packages/core/src/renderer/AttrHelper.ts:465</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Map style --&gt; style</p>
+								</div>
+								<p>In SVG, the attribute &quot;style&quot; is a catch-all that allows
+									a tag to be styled using an arbitrary CSS string.  This
+									attribute is often a better way to get certain attributes
+									to appear correctly in the browser than one-off attributes
+									associated with particular tags.  For instance, the SVG
+									attribute stroke-width=&quot;4&quot; appears not to work on text in
+									many browsers, whereas style=&quot;stroke-width:4;&quot; appears to
+								work just fine.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -994,7 +1107,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1002,15 +1115,20 @@
 					<a name="attrtextanchor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Text<wbr>Anchor</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Text<wbr>Anchor<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Text<wbr>Anchor<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L347">packages/core/src/renderer/AttrHelper.ts:347</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L589">packages/core/src/renderer/AttrHelper.ts:589</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps textAnchor --&gt; text-anchor</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1025,7 +1143,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1033,15 +1151,20 @@
 					<a name="attrtitle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Title</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Title<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Title<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L254">packages/core/src/renderer/AttrHelper.ts:254</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L423">packages/core/src/renderer/AttrHelper.ts:423</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps name --&gt; new Title</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1056,7 +1179,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1064,15 +1187,20 @@
 					<a name="attrtransformcoords" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Transform<wbr>Coords</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Transform<wbr>Coords<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Transform<wbr>Coords<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L83">packages/core/src/renderer/AttrHelper.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L147">packages/core/src/renderer/AttrHelper.ts:147</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps center, w, h --&gt; transform</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1090,7 +1218,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1098,15 +1226,22 @@
 					<a name="attrvisibility" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attr<wbr>Visibility</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attr<wbr>Visibility<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attr<wbr>Visibility<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L264">packages/core/src/renderer/AttrHelper.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L441">packages/core/src/renderer/AttrHelper.ts:441</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Map visibility --&gt; visibility</p>
+								</div>
+								<p>The SVG attribute &quot;visibility&quot; can be set to
+								&quot;visible&quot; or &quot;hidden&quot; to show/hide elements.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1121,7 +1256,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1129,15 +1264,20 @@
 					<a name="attrwh" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attrWH</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attrWH<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attrWH<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L186">packages/core/src/renderer/AttrHelper.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L301">packages/core/src/renderer/AttrHelper.ts:301</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps w, h --&gt; width, height</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1152,7 +1292,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1160,15 +1300,20 @@
 					<a name="attrxy" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> attrXY</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">attrXY<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">attrXY<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span>, canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span>, elem<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/5b46597/packages/core/src/renderer/AttrHelper.ts#L100">packages/core/src/renderer/AttrHelper.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d3175c6/packages/core/src/renderer/AttrHelper.ts#L169">packages/core/src/renderer/AttrHelper.ts:169</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Maps center, w, h --&gt; x, y</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1186,7 +1331,7 @@
 									<h5>elem: <span class="tsd-signature-type">SVGElement</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1210,6 +1355,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_renderer_attrhelper_.html#attralignmentbaseline" class="tsd-kind-icon">attr<wbr>Alignment<wbr>Baseline</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_renderer_attrhelper_.html#attrautofillsvg" class="tsd-kind-icon">attr<wbr>Auto<wbr>Fill<wbr>Svg</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_renderer_attrhelper_.html#attrcenter" class="tsd-kind-icon">attr<wbr>Center</a>
@@ -1239,16 +1387,10 @@
 						<a href="_renderer_attrhelper_.html#attrfontweight" class="tsd-kind-icon">attr<wbr>Font<wbr>Weight</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_renderer_attrhelper_.html#attrnofill" class="tsd-kind-icon">attr<wbr>NoFill</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_renderer_attrhelper_.html#attropacity" class="tsd-kind-icon">attr<wbr>Opacity</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_renderer_attrhelper_.html#attrpathdata" class="tsd-kind-icon">attr<wbr>Path<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_renderer_attrhelper_.html#attrpathlength" class="tsd-kind-icon">attr<wbr>Path<wbr>Length</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_renderer_attrhelper_.html#attrpoints" class="tsd-kind-icon">attr<wbr>Points</a>
