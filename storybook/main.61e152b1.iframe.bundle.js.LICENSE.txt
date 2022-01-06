@@ -39,3 +39,21 @@
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
+
+/**
+ * @license MIT
+ * @copyright 2019 Eyas Ranjous <eyas.ranjous@gmail.com>
+ */
+
+/**
+ * @license MIT
+ * @copyright 2020 Eyas Ranjous <eyas.ranjous@gmail.com>
+ *
+ * @class
+ * @abstract
+ */
+
+/**
+ * @license MIT
+ * @copyright 2020 Eyas Ranjous <eyas.ranjous@gmail.com>
+ */
