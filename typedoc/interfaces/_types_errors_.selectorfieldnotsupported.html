@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IIntV | @penrose/core</title>
+	<title>SelectorFieldNotSupported | @penrose/core</title>
 	<meta name="description" content="Documentation for @penrose/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,31 +56,24 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_types_value_.html">&quot;types/value&quot;</a>
+					<a href="../modules/_types_errors_.html">&quot;types/errors&quot;</a>
 				</li>
 				<li>
-					<a href="_types_value_.iintv.html">IIntV</a>
+					<a href="_types_errors_.selectorfieldnotsupported.html">SelectorFieldNotSupported</a>
 				</li>
 			</ul>
-			<h1>Interface IIntV</h1>
+			<h1>Interface SelectorFieldNotSupported</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An integer</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IIntV</span>
+						<span class="target">SelectorFieldNotSupported</span>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +84,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_value_.iintv.html#contents" class="tsd-kind-icon">contents</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_value_.iintv.html#tag" class="tsd-kind-icon">tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_errors_.selectorfieldnotsupported.html#field" class="tsd-kind-icon">field</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_errors_.selectorfieldnotsupported.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_errors_.selectorfieldnotsupported.html#tag" class="tsd-kind-icon">tag</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,22 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contents" class="tsd-anchor"></a>
-					<h3>contents</h3>
-					<div class="tsd-signature tsd-kind-icon">contents<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="field" class="tsd-anchor"></a>
+					<h3>field</h3>
+					<div class="tsd-signature tsd-kind-icon">field<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.identifier.html" class="tsd-signature-type">Identifier</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/value.ts#L120">packages/core/src/types/value.ts:120</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/errors.ts#L234">packages/core/src/types/errors.ts:234</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_style_.html#bindingform" class="tsd-signature-type">BindingForm</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/errors.ts#L233">packages/core/src/types/errors.ts:233</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="tag" class="tsd-anchor"></a>
 					<h3>tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"IntV"</span></div>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"SelectorFieldNotSupported"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/value.ts#L119">packages/core/src/types/value.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/errors.ts#L232">packages/core/src/types/errors.ts:232</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +133,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_types_value_.html">&quot;types/value&quot;</a>
+						<a href="../modules/_types_errors_.html">&quot;types/errors&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -138,13 +142,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_value_.iintv.html" class="tsd-kind-icon">IIntV</a>
+						<a href="_types_errors_.selectorfieldnotsupported.html" class="tsd-kind-icon">Selector<wbr>Field<wbr>Not<wbr>Supported</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_value_.iintv.html#contents" class="tsd-kind-icon">contents</a>
+								<a href="_types_errors_.selectorfieldnotsupported.html#field" class="tsd-kind-icon">field</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_value_.iintv.html#tag" class="tsd-kind-icon">tag</a>
+								<a href="_types_errors_.selectorfieldnotsupported.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_errors_.selectorfieldnotsupported.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 						</ul>
 					</li>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IIntV | @penrose/core</title>
+	<title>RelField | @penrose/core</title>
 	<meta name="description" content="Documentation for @penrose/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,31 +56,24 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_types_value_.html">&quot;types/value&quot;</a>
+					<a href="../modules/_types_style_.html">&quot;types/style&quot;</a>
 				</li>
 				<li>
-					<a href="_types_value_.iintv.html">IIntV</a>
+					<a href="_types_style_.relfield.html">RelField</a>
 				</li>
 			</ul>
-			<h1>Interface IIntV</h1>
+			<h1>Interface RelField</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An integer</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IIntV</span>
+						<span class="target">RelField</span>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +84,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_value_.iintv.html#contents" class="tsd-kind-icon">contents</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_value_.iintv.html#tag" class="tsd-kind-icon">tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_style_.relfield.html#field" class="tsd-kind-icon">field</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_style_.relfield.html#fielddescriptor" class="tsd-kind-icon">field<wbr>Descriptor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_style_.relfield.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_style_.relfield.html#tag" class="tsd-kind-icon">tag</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,22 +96,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contents" class="tsd-anchor"></a>
-					<h3>contents</h3>
-					<div class="tsd-signature tsd-kind-icon">contents<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="field" class="tsd-anchor"></a>
+					<h3>field</h3>
+					<div class="tsd-signature tsd-kind-icon">field<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.identifier.html" class="tsd-signature-type">Identifier</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/value.ts#L120">packages/core/src/types/value.ts:120</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/style.ts#L59">packages/core/src/types/style.ts:59</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fielddescriptor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> field<wbr>Descriptor</h3>
+					<div class="tsd-signature tsd-kind-icon">field<wbr>Descriptor<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_substance_.html#labeltype" class="tsd-signature-type">LabelType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/style.ts#L60">packages/core/src/types/style.ts:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_style_.html#bindingform" class="tsd-signature-type">BindingForm</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/style.ts#L58">packages/core/src/types/style.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="tag" class="tsd-anchor"></a>
 					<h3>tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"IntV"</span></div>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"RelField"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/value.ts#L119">packages/core/src/types/value.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/style.ts#L57">packages/core/src/types/style.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +144,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_types_value_.html">&quot;types/value&quot;</a>
+						<a href="../modules/_types_style_.html">&quot;types/style&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -138,13 +153,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_value_.iintv.html" class="tsd-kind-icon">IIntV</a>
+						<a href="_types_style_.relfield.html" class="tsd-kind-icon">Rel<wbr>Field</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_value_.iintv.html#contents" class="tsd-kind-icon">contents</a>
+								<a href="_types_style_.relfield.html#field" class="tsd-kind-icon">field</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_value_.iintv.html#tag" class="tsd-kind-icon">tag</a>
+								<a href="_types_style_.relfield.html#fielddescriptor" class="tsd-kind-icon">field<wbr>Descriptor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_style_.relfield.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_style_.relfield.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 						</ul>
 					</li>

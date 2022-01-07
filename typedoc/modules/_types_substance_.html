@@ -86,6 +86,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.func.html" class="tsd-kind-icon">Func</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.labeldecl.html" class="tsd-kind-icon">Label<wbr>Decl</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.labelids.html" class="tsd-kind-icon">LabelIDs</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.labelvalue.html" class="tsd-kind-icon">Label<wbr>Value</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.nolabel.html" class="tsd-kind-icon">No<wbr>Label</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.subprog.html" class="tsd-kind-icon">Sub<wbr>Prog</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_substance_.substanceenv.html" class="tsd-kind-icon">Substance<wbr>Env</a></li>
@@ -97,6 +98,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_substance_.html#labelmap" class="tsd-kind-icon">Label<wbr>Map</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_substance_.html#labeloption" class="tsd-kind-icon">Label<wbr>Option</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_substance_.html#labeltype" class="tsd-kind-icon">Label<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_substance_.html#subexpr" class="tsd-kind-icon">Sub<wbr>Expr</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_substance_.html#subpredarg" class="tsd-kind-icon">Sub<wbr>Pred<wbr>Arg</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_substance_.html#subres" class="tsd-kind-icon">Sub<wbr>Res</a></li>
@@ -111,10 +113,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="labelmap" class="tsd-anchor"></a>
 					<h3>Label<wbr>Map</h3>
-					<div class="tsd-signature tsd-kind-icon">Label<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Label<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_substance_.labelvalue.html" class="tsd-signature-type">LabelValue</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/00681d5/packages/core/src/types/substance.ts#L6">packages/core/src/types/substance.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L6">packages/core/src/types/substance.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +126,17 @@
 					<div class="tsd-signature tsd-kind-icon">Label<wbr>Option<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_substance_.defaultlabels.html" class="tsd-signature-type">DefaultLabels</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.labelids.html" class="tsd-signature-type">LabelIDs</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/00681d5/packages/core/src/types/substance.ts#L42">packages/core/src/types/substance.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L50">packages/core/src/types/substance.ts:50</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="labeltype" class="tsd-anchor"></a>
+					<h3>Label<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Label<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"MathLabel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"TextLabel"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"NoLabel"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L44">packages/core/src/types/substance.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -134,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sub<wbr>Expr<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_ast_.identifier.html" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.applyfunction.html" class="tsd-signature-type">ApplyFunction</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.applyconstructor.html" class="tsd-signature-type">ApplyConstructor</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.func.html" class="tsd-signature-type">Func</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.deconstructor.html" class="tsd-signature-type">Deconstructor</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_ast_.istringlit.html" class="tsd-signature-type">IStringLit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/00681d5/packages/core/src/types/substance.ts#L73">packages/core/src/types/substance.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L81">packages/core/src/types/substance.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -144,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sub<wbr>Pred<wbr>Arg<span class="tsd-signature-symbol">:</span> <a href="_types_substance_.html#subexpr" class="tsd-signature-type">SubExpr</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.applypredicate.html" class="tsd-signature-type">ApplyPredicate</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/00681d5/packages/core/src/types/substance.ts#L119">packages/core/src/types/substance.ts:119</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L127">packages/core/src/types/substance.ts:127</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -154,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sub<wbr>Res<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="../interfaces/_types_substance_.substanceenv.html" class="tsd-signature-type">SubstanceEnv</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/00681d5/packages/core/src/types/substance.ts#L5">packages/core/src/types/substance.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L5">packages/core/src/types/substance.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sub<wbr>Stmt<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_substance_.decl.html" class="tsd-signature-type">Decl</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.bind.html" class="tsd-signature-type">Bind</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.equalexprs.html" class="tsd-signature-type">EqualExprs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.equalpredicates.html" class="tsd-signature-type">EqualPredicates</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.applypredicate.html" class="tsd-signature-type">ApplyPredicate</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.labeldecl.html" class="tsd-signature-type">LabelDecl</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.autolabel.html" class="tsd-signature-type">AutoLabel</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_substance_.nolabel.html" class="tsd-signature-type">NoLabel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/00681d5/packages/core/src/types/substance.ts#L22">packages/core/src/types/substance.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/9357e4e/packages/core/src/types/substance.ts#L22">packages/core/src/types/substance.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,6 +235,9 @@
 						<a href="../interfaces/_types_substance_.labelids.html" class="tsd-kind-icon">LabelIDs</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_types_substance_.labelvalue.html" class="tsd-kind-icon">Label<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_types_substance_.nolabel.html" class="tsd-kind-icon">No<wbr>Label</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -239,6 +254,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_substance_.html#labeloption" class="tsd-kind-icon">Label<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_substance_.html#labeltype" class="tsd-kind-icon">Label<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_substance_.html#subexpr" class="tsd-kind-icon">Sub<wbr>Expr</a>
