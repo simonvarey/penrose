@@ -77,6 +77,12 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_renderer_renderer_.html#pathresolver" class="tsd-kind-icon">Path<wbr>Resolver</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_renderer_renderer_.html#draggableshape" class="tsd-kind-icon">Draggable<wbr>Shape</a></li>
@@ -90,18 +96,59 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="pathresolver" class="tsd-anchor"></a>
+					<h3>Path<wbr>Resolver</h3>
+					<div class="tsd-signature tsd-kind-icon">Path<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/cedbf1b/packages/core/src/renderer/Renderer.ts#L19">packages/core/src/renderer/Renderer.ts:19</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Resolves path references into static strings. Implemented by client
+								since filesystem contexts vary (eg browser vs headless).
+							If path fails to resolve, return null</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>path: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="draggableshape" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Draggable<wbr>Shape</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Draggable<wbr>Shape<span class="tsd-signature-symbol">(</span>shapeProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_renderer_renderer_.shapeprops.html" class="tsd-signature-type">ShapeProps</a>, onDrag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, parentSVG<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGSVGElement</span>, canvasSizeCustom<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGGElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">Draggable<wbr>Shape<span class="tsd-signature-symbol">(</span>shapeProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_renderer_renderer_.shapeprops.html" class="tsd-signature-type">ShapeProps</a>, onDrag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, parentSVG<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGSVGElement</span>, canvasSizeCustom<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGGElement</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d843946/packages/core/src/renderer/Renderer.ts#L66">packages/core/src/renderer/Renderer.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/cedbf1b/packages/core/src/renderer/Renderer.ts#L75">packages/core/src/renderer/Renderer.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -157,7 +204,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SVGGElement</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGGElement</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -165,15 +212,17 @@
 					<a name="renderinteractive" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Render<wbr>Interactive</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Render<wbr>Interactive<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a>, updateState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>newState<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGSVGElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">Render<wbr>Interactive<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a>, updateState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>newState<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, pathResolver<span class="tsd-signature-symbol">: </span><a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGSVGElement</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d843946/packages/core/src/renderer/Renderer.ts#L112">packages/core/src/renderer/Renderer.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/cedbf1b/packages/core/src/renderer/Renderer.ts#L128">packages/core/src/renderer/Renderer.ts:128</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -181,6 +230,11 @@
 								</li>
 								<li>
 									<h5>updateState: <span class="tsd-signature-symbol">(</span>newState<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Callback for drag-updated state</p>
+										</div>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
@@ -200,8 +254,16 @@
 										</li>
 									</ul>
 								</li>
+								<li>
+									<h5>pathResolver: <a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Resolves paths to static strings</p>
+										</div>
+									</div>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SVGSVGElement</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGSVGElement</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -209,13 +271,13 @@
 					<a name="rendershape" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Render<wbr>Shape</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Render<wbr>Shape<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a><span class="tsd-signature-symbol">; </span>shape<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">Render<wbr>Shape<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a><span class="tsd-signature-symbol">; </span>pathResolver<span class="tsd-signature-symbol">: </span><a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">; </span>shape<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d843946/packages/core/src/renderer/Renderer.ts#L26">packages/core/src/renderer/Renderer.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/cedbf1b/packages/core/src/renderer/Renderer.ts#L33">packages/core/src/renderer/Renderer.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,7 +288,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a><span class="tsd-signature-symbol">; </span>shape<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>canvasSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">; </span>labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a><span class="tsd-signature-symbol">; </span>pathResolver<span class="tsd-signature-symbol">: </span><a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">; </span>shape<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>canvas<wbr>Size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h5>
@@ -235,12 +297,15 @@
 											<h5>labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a></h5>
 										</li>
 										<li class="tsd-parameter">
+											<h5>path<wbr>Resolver<span class="tsd-signature-symbol">: </span><a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a></h5>
+										</li>
+										<li class="tsd-parameter">
 											<h5>shape<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#shape" class="tsd-signature-type">Shape</a></h5>
 										</li>
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SVGElement</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGElement</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -248,13 +313,13 @@
 					<a name="renderstatic" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Render<wbr>Static</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Render<wbr>Static<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SVGSVGElement</span></li>
+						<li class="tsd-signature tsd-kind-icon">Render<wbr>Static<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a>, pathResolver<span class="tsd-signature-symbol">: </span><a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGSVGElement</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d843946/packages/core/src/renderer/Renderer.ts#L146">packages/core/src/renderer/Renderer.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/cedbf1b/packages/core/src/renderer/Renderer.ts#L168">packages/core/src/renderer/Renderer.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,8 +332,16 @@
 								<li>
 									<h5>state: <a href="_types_state_.html#state" class="tsd-signature-type">State</a></h5>
 								</li>
+								<li>
+									<h5>pathResolver: <a href="_renderer_renderer_.html#pathresolver" class="tsd-signature-type">PathResolver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Resolves paths to static strings</p>
+										</div>
+									</div>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">SVGSVGElement</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SVGSVGElement</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -282,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/d843946/packages/core/src/renderer/Renderer.ts#L50">packages/core/src/renderer/Renderer.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/cedbf1b/packages/core/src/renderer/Renderer.ts#L59">packages/core/src/renderer/Renderer.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -334,6 +407,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_renderer_renderer_.shapeprops.html" class="tsd-kind-icon">Shape<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_renderer_renderer_.html#pathresolver" class="tsd-kind-icon">Path<wbr>Resolver</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_renderer_renderer_.html#draggableshape" class="tsd-kind-icon">Draggable<wbr>Shape</a>
