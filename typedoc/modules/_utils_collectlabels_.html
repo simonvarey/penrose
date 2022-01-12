@@ -70,10 +70,17 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
+							<h3>Namespaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="_utils_collectlabels_.measuretext.html" class="tsd-kind-icon">measure<wbr>Text</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="_utils_collectlabels_.html#output" class="tsd-kind-icon">Output</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_utils_collectlabels_.html#textmeasurement" class="tsd-kind-icon">Text<wbr>Measurement</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -92,13 +99,17 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_collectlabels_.html#collectlabels" class="tsd-kind-icon">collect<wbr>Labels</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_utils_collectlabels_.html#convert" class="tsd-kind-icon">convert</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_utils_collectlabels_.html#equationdata" class="tsd-kind-icon">equation<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_utils_collectlabels_.html#floatv" class="tsd-kind-icon">floatV</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_collectlabels_.html#retrievelabel" class="tsd-kind-icon">retrieve<wbr>Label</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_utils_collectlabels_.html#textdata" class="tsd-kind-icon">text<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_collectlabels_.html#tofontrule" class="tsd-kind-icon">to<wbr>Font<wbr>Rule</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 					<a name="output" class="tsd-anchor"></a>
@@ -106,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">Output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">; </span>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L62">packages/core/src/utils/CollectLabels.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L59">packages/core/src/utils/CollectLabels.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -114,6 +125,30 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="textmeasurement" class="tsd-anchor"></a>
+					<h3>Text<wbr>Measurement</h3>
+					<div class="tsd-signature tsd-kind-icon">Text<wbr>Measurement<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>actualDescent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L227">packages/core/src/utils/CollectLabels.ts:227</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>actual<wbr>Descent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -133,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">EX_<wbr>CONSTANT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10</span><span class="tsd-signature-symbol"> = 10</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L40">packages/core/src/utils/CollectLabels.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L37">packages/core/src/utils/CollectLabels.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">adaptor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLAdaptor</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">, </span><a href="_shapes_shapes_.html#text" class="tsd-signature-type">Text</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Document</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = browserAdaptor()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L19">packages/core/src/utils/CollectLabels.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L16">packages/core/src/utils/CollectLabels.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MathDocument</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = mathjax.document(&quot;&quot;, { InputJax: tex, OutputJax: svg })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L37">packages/core/src/utils/CollectLabels.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L34">packages/core/src/utils/CollectLabels.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">svg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SVG</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new SVG({ fontCache: &quot;none&quot; })</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L36">packages/core/src/utils/CollectLabels.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L33">packages/core/src/utils/CollectLabels.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -173,7 +208,7 @@
 					<div class="tsd-signature tsd-kind-icon">tex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TeX</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new TeX({packages: AllPackages,macros: {textsc: [&quot;\\style{font-variant-caps: small-caps}{\\text{#1}}&quot;, 1],},inlineMath: [[&quot;$&quot;, &quot;$&quot;],[&quot;\\(&quot;, &quot;\\)&quot;],],processEscapes: true,// https://github.com/mathjax/MathJax-demos-node/issues/25#issuecomment-711247252formatError: (jax: unknown, err: Error) &#x3D;&gt; {throw Error(err.message);},})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L21">packages/core/src/utils/CollectLabels.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L18">packages/core/src/utils/CollectLabels.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -183,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">tex2svg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> = memoize(async (contents: string,name: string,fontSize: string): Promise&lt;Result&lt;Output, string&gt;&gt; &#x3D;&gt;new Promise((resolve) &#x3D;&gt; {const output &#x3D; convert(contents, fontSize);if (output.isErr()) {resolve(err(&#x60;MathJax could not render \$${contents}\$: ${output.error}&#x60;));return;}const body &#x3D; output.value;// console.log(output);// console.log(output.viewBox.baseVal);const viewBox &#x3D; body.getAttribute(&quot;viewBox&quot;)!.split(&quot; &quot;);const width &#x3D; parseFloat(viewBox[2]);const height &#x3D; parseFloat(viewBox[3]);// rescaling according to// https://github.com/mathjax/MathJax-src/blob/32213009962a887e262d9930adcfb468da4967ce/ts/output/svg.ts#L248const vAlignFloat &#x3D; parseFloat(body.style.verticalAlign) * EX_CONSTANT;const constHeight &#x3D; parseFloat(fontSize) - vAlignFloat;const scaledWidth &#x3D; (constHeight / height) * width;resolve(ok({ body, width: scaledWidth, height: constHeight }));}))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L72">packages/core/src/utils/CollectLabels.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L69">packages/core/src/utils/CollectLabels.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L117">packages/core/src/utils/CollectLabels.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L173">packages/core/src/utils/CollectLabels.ts:173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -229,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L42">packages/core/src/utils/CollectLabels.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L39">packages/core/src/utils/CollectLabels.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -245,17 +280,69 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="retrievelabel" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> retrieve<wbr>Label</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">retrieve<wbr>Label<span class="tsd-signature-symbol">(</span>shapeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_state_.labeldata.html" class="tsd-signature-type">LabelData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="equationdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> equation<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">equation<wbr>Data<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rendered<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_state_.equationdata.html" class="tsd-signature-type">EquationData</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/utils/CollectLabels.ts#L102">packages/core/src/utils/CollectLabels.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L129">packages/core/src/utils/CollectLabels.ts:129</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>rendered: <span class="tsd-signature-type">HTMLElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_state_.equationdata.html" class="tsd-signature-type">EquationData</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="floatv" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> floatV</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">floatV<span class="tsd-signature-symbol">(</span>contents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_value_.ifloatv.html" class="tsd-signature-type">IFloatV</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L113">packages/core/src/utils/CollectLabels.ts:113</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>contents: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_value_.ifloatv.html" class="tsd-signature-type">IFloatV</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="retrievelabel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> retrieve<wbr>Label</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">retrieve<wbr>Label<span class="tsd-signature-symbol">(</span>shapeName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, labels<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_state_.html#labeldata" class="tsd-signature-type">LabelData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L99">packages/core/src/utils/CollectLabels.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -267,7 +354,70 @@
 									<h5>labels: <a href="_types_state_.html#labelcache" class="tsd-signature-type">LabelCache</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_state_.labeldata.html" class="tsd-signature-type">LabelData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_types_state_.html#labeldata" class="tsd-signature-type">LabelData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="textdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> text<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">text<wbr>Data<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, descent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_state_.textdata.html" class="tsd-signature-type">TextData</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L118">packages/core/src/utils/CollectLabels.ts:118</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>descent: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_state_.textdata.html" class="tsd-signature-type">TextData</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="tofontrule" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Font<wbr>Rule</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Font<wbr>Rule<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/utils/CollectLabels.ts#L148">packages/core/src/utils/CollectLabels.ts:148</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the CSS string for the font setting of a <code>Text</code> GPI.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>properties<span class="tsd-signature-symbol">: </span><a href="_types_shape_.html#properties" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>a CSS rule string of its font settings</p>
 						</li>
 					</ul>
 				</section>
@@ -281,6 +431,11 @@
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="_utils_collectlabels_.html">&quot;utils/<wbr>Collect<wbr>Labels&quot;</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="_utils_collectlabels_.measuretext.html">measure<wbr>Text</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
@@ -288,6 +443,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_utils_collectlabels_.html#output" class="tsd-kind-icon">Output</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_utils_collectlabels_.html#textmeasurement" class="tsd-kind-icon">Text<wbr>Measurement</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_utils_collectlabels_.html#ex_constant" class="tsd-kind-icon">EX_<wbr>CONSTANT</a>
@@ -313,8 +471,20 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_utils_collectlabels_.html#convert" class="tsd-kind-icon">convert</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_utils_collectlabels_.html#equationdata" class="tsd-kind-icon">equation<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_utils_collectlabels_.html#floatv" class="tsd-kind-icon">floatV</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_utils_collectlabels_.html#retrievelabel" class="tsd-kind-icon">retrieve<wbr>Label</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_utils_collectlabels_.html#textdata" class="tsd-kind-icon">text<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_collectlabels_.html#tofontrule" class="tsd-kind-icon">to<wbr>Font<wbr>Rule</a>
 					</li>
 				</ul>
 			</nav>
@@ -326,6 +496,7 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>

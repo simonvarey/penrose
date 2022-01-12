@@ -73,6 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.equationdata.html" class="tsd-kind-icon">Equation<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.ifn.html" class="tsd-kind-icon">IFn</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.ifncached.html" class="tsd-kind-icon">IFn<wbr>Cached</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/_types_state_.ifndone.html" class="tsd-kind-icon">IFn<wbr>Done</a></li>
@@ -80,7 +81,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.iparams.html" class="tsd-kind-icon">IParams</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.istate.html" class="tsd-kind-icon">IState</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.iweightinfo.html" class="tsd-kind-icon">IWeight<wbr>Info</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.labeldata.html" class="tsd-kind-icon">Label<wbr>Data</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_types_state_.textdata.html" class="tsd-kind-icon">Text<wbr>Data</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -90,6 +91,7 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_state_.html#fncached" class="tsd-kind-icon">Fn<wbr>Cached</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="_types_state_.html#fndone" class="tsd-kind-icon">Fn<wbr>Done</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_state_.html#labelcache" class="tsd-kind-icon">Label<wbr>Cache</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_state_.html#labeldata" class="tsd-kind-icon">Label<wbr>Data</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_state_.html#lbfgsparams" class="tsd-kind-icon">Lbfgs<wbr>Params</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_state_.html#optstatus" class="tsd-kind-icon">Opt<wbr>Status</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_state_.html#opttype" class="tsd-kind-icon">Opt<wbr>Type</a></li>
@@ -110,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">Fn<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.ifn.html" class="tsd-signature-type">IFn</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L55">packages/core/src/types/state.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L65">packages/core/src/types/state.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">Fn<wbr>Cached<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.ifncached.html" class="tsd-signature-type">IFnCached</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L135">packages/core/src/types/state.ts:135</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L145">packages/core/src/types/state.ts:145</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -130,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">Fn<wbr>Done&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.ifndone.html" class="tsd-signature-type">IFnDone</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L48">packages/core/src/types/state.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L58">packages/core/src/types/state.ts:58</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -143,12 +145,27 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="labelcache" class="tsd-anchor"></a>
 					<h3>Label<wbr>Cache</h3>
-					<div class="tsd-signature tsd-kind-icon">Label<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_state_.labeldata.html" class="tsd-signature-type">LabelData</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Label<wbr>Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_state_.html#labeldata" class="tsd-signature-type">LabelData</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L44">packages/core/src/types/state.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L54">packages/core/src/types/state.ts:54</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="labeldata" class="tsd-anchor"></a>
+					<h3>Label<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">Label<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.equationdata.html" class="tsd-signature-type">EquationData</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_state_.textdata.html" class="tsd-signature-type">TextData</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L39">packages/core/src/types/state.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Output of label generation.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="lbfgsparams" class="tsd-anchor"></a>
@@ -156,7 +173,7 @@
 					<div class="tsd-signature tsd-kind-icon">Lbfgs<wbr>Params<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.ilbfgsparams.html" class="tsd-signature-type">ILbfgsParams</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L74">packages/core/src/types/state.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L84">packages/core/src/types/state.ts:84</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">Opt<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"NewIter"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"UnconstrainedRunning"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"UnconstrainedConverged"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EPConverged"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Error"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L67">packages/core/src/types/state.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L77">packages/core/src/types/state.ts:77</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +193,7 @@
 					<div class="tsd-signature tsd-kind-icon">Opt<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"ObjFn"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ConstrFn"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L65">packages/core/src/types/state.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L75">packages/core/src/types/state.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +203,7 @@
 					<div class="tsd-signature tsd-kind-icon">Params<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.iparams.html" class="tsd-signature-type">IParams</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L88">packages/core/src/types/state.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L98">packages/core/src/types/state.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">State<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.istate.html" class="tsd-signature-type">IState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L33">packages/core/src/types/state.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L33">packages/core/src/types/state.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +223,7 @@
 					<div class="tsd-signature tsd-kind-icon">Vary<wbr>Map&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L46">packages/core/src/types/state.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L56">packages/core/src/types/state.ts:56</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -222,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">Weight<wbr>Info<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_state_.iweightinfo.html" class="tsd-signature-type">IWeightInfo</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/fb7783d/packages/core/src/types/state.ts#L143">packages/core/src/types/state.ts:143</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L153">packages/core/src/types/state.ts:153</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,6 +258,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_types_state_.equationdata.html" class="tsd-kind-icon">Equation<wbr>Data</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_types_state_.ifn.html" class="tsd-kind-icon">IFn</a>
 					</li>
@@ -263,7 +283,7 @@
 						<a href="../interfaces/_types_state_.iweightinfo.html" class="tsd-kind-icon">IWeight<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="../interfaces/_types_state_.labeldata.html" class="tsd-kind-icon">Label<wbr>Data</a>
+						<a href="../interfaces/_types_state_.textdata.html" class="tsd-kind-icon">Text<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_state_.html#fn" class="tsd-kind-icon">Fn</a>
@@ -276,6 +296,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_state_.html#labelcache" class="tsd-kind-icon">Label<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_state_.html#labeldata" class="tsd-kind-icon">Label<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_state_.html#lbfgsparams" class="tsd-kind-icon">Lbfgs<wbr>Params</a>
@@ -308,6 +331,7 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>

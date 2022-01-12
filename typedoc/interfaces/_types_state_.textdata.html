@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FunctionDecl | @penrose/core</title>
+	<title>TextData | @penrose/core</title>
 	<meta name="description" content="Documentation for @penrose/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_types_domain_.html">&quot;types/domain&quot;</a>
+					<a href="../modules/_types_state_.html">&quot;types/state&quot;</a>
 				</li>
 				<li>
-					<a href="_types_domain_.functiondecl.html">FunctionDecl</a>
+					<a href="_types_state_.textdata.html">TextData</a>
 				</li>
 			</ul>
-			<h1>Interface FunctionDecl</h1>
+			<h1>Interface TextData</h1>
 		</div>
 	</div>
 </header>
@@ -73,12 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/_types_ast_.html#astnode" class="tsd-signature-type">ASTNode</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">FunctionDecl</span>
-							</li>
-						</ul>
+						<span class="target">TextData</span>
 					</li>
 				</ul>
 			</section>
@@ -89,11 +84,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_domain_.functiondecl.html#args" class="tsd-kind-icon">args</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_domain_.functiondecl.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_domain_.functiondecl.html#output" class="tsd-kind-icon">output</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_domain_.functiondecl.html#params" class="tsd-kind-icon">params</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_domain_.functiondecl.html#tag" class="tsd-kind-icon">tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_state_.textdata.html#descent" class="tsd-kind-icon">descent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_state_.textdata.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_state_.textdata.html#tag" class="tsd-kind-icon">tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_state_.textdata.html#width" class="tsd-kind-icon">width</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,52 +96,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="args" class="tsd-anchor"></a>
-					<h3>args</h3>
-					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <a href="_types_domain_.arg.html" class="tsd-signature-type">Arg</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="descent" class="tsd-anchor"></a>
+					<h3>descent</h3>
+					<div class="tsd-signature tsd-kind-icon">descent<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/domain.ts#L64">packages/core/src/types/domain.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L51">packages/core/src/types/state.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.identifier.html" class="tsd-signature-type">Identifier</a></div>
+					<a name="height" class="tsd-anchor"></a>
+					<h3>height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/domain.ts#L62">packages/core/src/types/domain.ts:62</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="output" class="tsd-anchor"></a>
-					<h3>output</h3>
-					<div class="tsd-signature tsd-kind-icon">output<span class="tsd-signature-symbol">:</span> <a href="_types_domain_.arg.html" class="tsd-signature-type">Arg</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/domain.ts#L65">packages/core/src/types/domain.ts:65</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="params" class="tsd-anchor"></a>
-					<h3>params</h3>
-					<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <a href="_types_domain_.typevar.html" class="tsd-signature-type">TypeVar</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/domain.ts#L63">packages/core/src/types/domain.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L50">packages/core/src/types/state.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="tag" class="tsd-anchor"></a>
 					<h3>tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"FunctionDecl"</span></div>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"TextData"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/domain.ts#L61">packages/core/src/types/domain.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L48">packages/core/src/types/state.ts:48</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="width" class="tsd-anchor"></a>
+					<h3>width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_value_.html#value" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/8886074/packages/core/src/types/state.ts#L49">packages/core/src/types/state.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -160,83 +144,92 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_types_domain_.html">&quot;types/domain&quot;</a>
+						<a href="../modules/_types_state_.html">&quot;types/state&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.arg.html" class="tsd-kind-icon">Arg</a>
+						<a href="_types_state_.equationdata.html" class="tsd-kind-icon">Equation<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.constructordecl.html" class="tsd-kind-icon">Constructor<wbr>Decl</a>
+						<a href="_types_state_.ifn.html" class="tsd-kind-icon">IFn</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.domainprog.html" class="tsd-kind-icon">Domain<wbr>Prog</a>
+						<a href="_types_state_.ifncached.html" class="tsd-kind-icon">IFn<wbr>Cached</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_types_state_.ifndone.html" class="tsd-kind-icon">IFn<wbr>Done</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.env.html" class="tsd-kind-icon">Env</a>
+						<a href="_types_state_.ilbfgsparams.html" class="tsd-kind-icon">ILbfgs<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_types_state_.iparams.html" class="tsd-kind-icon">IParams</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_types_state_.istate.html" class="tsd-kind-icon">IState</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_types_state_.iweightinfo.html" class="tsd-kind-icon">IWeight<wbr>Info</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.functiondecl.html" class="tsd-kind-icon">Function<wbr>Decl</a>
+						<a href="_types_state_.textdata.html" class="tsd-kind-icon">Text<wbr>Data</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_domain_.functiondecl.html#args" class="tsd-kind-icon">args</a>
+								<a href="_types_state_.textdata.html#descent" class="tsd-kind-icon">descent</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_domain_.functiondecl.html#name" class="tsd-kind-icon">name</a>
+								<a href="_types_state_.textdata.html#height" class="tsd-kind-icon">height</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_domain_.functiondecl.html#output" class="tsd-kind-icon">output</a>
+								<a href="_types_state_.textdata.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_domain_.functiondecl.html#params" class="tsd-kind-icon">params</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_domain_.functiondecl.html#tag" class="tsd-kind-icon">tag</a>
+								<a href="_types_state_.textdata.html#width" class="tsd-kind-icon">width</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.namedarg.html" class="tsd-kind-icon">Named<wbr>Arg</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.notationdecl.html" class="tsd-kind-icon">Notation<wbr>Decl</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.predicatedecl.html" class="tsd-kind-icon">Predicate<wbr>Decl</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.preludedecl.html" class="tsd-kind-icon">Prelude<wbr>Decl</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.prop.html" class="tsd-kind-icon">Prop</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.subtypedecl.html" class="tsd-kind-icon">Sub<wbr>Type<wbr>Decl</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.typeconstructor.html" class="tsd-kind-icon">Type<wbr>Constructor</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.typedecl.html" class="tsd-kind-icon">Type<wbr>Decl</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_domain_.typevar.html" class="tsd-kind-icon">Type<wbr>Var</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#fn" class="tsd-kind-icon">Fn</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_types_domain_.html#domainstmt" class="tsd-kind-icon">Domain<wbr>Stmt</a>
+						<a href="../modules/_types_state_.html#fncached" class="tsd-kind-icon">Fn<wbr>Cached</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_types_state_.html#fndone" class="tsd-kind-icon">Fn<wbr>Done</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_types_domain_.html#type" class="tsd-kind-icon">Type</a>
+						<a href="../modules/_types_state_.html#labelcache" class="tsd-kind-icon">Label<wbr>Cache</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_types_domain_.html#var" class="tsd-kind-icon">Var</a>
+						<a href="../modules/_types_state_.html#labeldata" class="tsd-kind-icon">Label<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#lbfgsparams" class="tsd-kind-icon">Lbfgs<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#optstatus" class="tsd-kind-icon">Opt<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#opttype" class="tsd-kind-icon">Opt<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#params" class="tsd-kind-icon">Params</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#state" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_types_state_.html#varymap" class="tsd-kind-icon">Vary<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_state_.html#weightinfo" class="tsd-kind-icon">Weight<wbr>Info</a>
 					</li>
 				</ul>
 			</nav>
