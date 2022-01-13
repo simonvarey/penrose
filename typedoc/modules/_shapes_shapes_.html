@@ -121,7 +121,7 @@
 					<div class="tsd-signature tsd-kind-icon">Shape<span class="tsd-signature-symbol">:</span> <a href="_shapes_shapes_.html#circle" class="tsd-signature-type">Circle</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#ellipse" class="tsd-signature-type">Ellipse</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#equation" class="tsd-signature-type">Equation</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#image" class="tsd-signature-type">Image</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#line" class="tsd-signature-type">Line</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#path" class="tsd-signature-type">Path</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#polygon" class="tsd-signature-type">Polygon</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#polyline" class="tsd-signature-type">Polyline</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#rectangle" class="tsd-signature-type">Rectangle</a><span class="tsd-signature-symbol"> | </span><a href="_shapes_shapes_.html#text" class="tsd-signature-type">Text</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L23">packages/core/src/shapes/Shapes.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L23">packages/core/src/shapes/Shapes.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -134,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">Circle<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleCircle,constr: makeCircle,bbox: BBox.bboxFromCircle,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L79">packages/core/src/shapes/Shapes.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L82">packages/core/src/shapes/Shapes.ts:82</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -144,37 +144,37 @@
 					<div class="tsd-signature tsd-kind-icon">Ellipse<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleEllipse,constr: makeEllipse,bbox: BBox.bboxFromEllipse,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L86">packages/core/src/shapes/Shapes.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L89">packages/core/src/shapes/Shapes.ts:89</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="equation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Equation</h3>
-					<div class="tsd-signature tsd-kind-icon">Equation<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleEquation,constr: makeEquation,bbox: BBox.bboxFromRectlike,isRectlike: true,})</span></div>
+					<div class="tsd-signature tsd-kind-icon">Equation<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleEquation,constr: makeEquation,bbox: BBox.bboxFromRectlike,isRectlike: true,isPolygonlike: true,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L93">packages/core/src/shapes/Shapes.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L96">packages/core/src/shapes/Shapes.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="image" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Image</h3>
-					<div class="tsd-signature tsd-kind-icon">Image<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleImage,constr: makeImage,bbox: BBox.bboxFromRectlike, // https://github.com/penrose/penrose/issues/712isRectlike: true,})</span></div>
+					<div class="tsd-signature tsd-kind-icon">Image<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleImage,constr: makeImage,bbox: BBox.bboxFromRectlike, // https://github.com/penrose/penrose/issues/712isRectlike: true,isPolygonlike: true,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L101">packages/core/src/shapes/Shapes.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L105">packages/core/src/shapes/Shapes.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="line" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Line</h3>
-					<div class="tsd-signature tsd-kind-icon">Line<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleLine,constr: makeLine,bbox: BBox.bboxFromLinelike,isLinelike: true,})</span></div>
+					<div class="tsd-signature tsd-kind-icon">Line<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleLine,constr: makeLine,bbox: BBox.bboxFromLinelike,isLinelike: true,isPolygonlike: true,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L109">packages/core/src/shapes/Shapes.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L114">packages/core/src/shapes/Shapes.ts:114</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,17 +184,17 @@
 					<div class="tsd-signature tsd-kind-icon">Path<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: samplePath,constr: makePath,bbox: BBox.bboxFromPath,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L117">packages/core/src/shapes/Shapes.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L123">packages/core/src/shapes/Shapes.ts:123</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="polygon" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Polygon</h3>
-					<div class="tsd-signature tsd-kind-icon">Polygon<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: samplePolygon,constr: makePolygon,bbox: BBox.bboxFromPolygon, // https://github.com/penrose/penrose/issues/709})</span></div>
+					<div class="tsd-signature tsd-kind-icon">Polygon<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: samplePolygon,constr: makePolygon,bbox: BBox.bboxFromPolygon, // https://github.com/penrose/penrose/issues/709isPolygonlike: true,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L124">packages/core/src/shapes/Shapes.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L130">packages/core/src/shapes/Shapes.ts:130</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -204,27 +204,27 @@
 					<div class="tsd-signature tsd-kind-icon">Polyline<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: samplePolyline,constr: makePolyline,bbox: BBox.bboxFromPolygon, // https://github.com/penrose/penrose/issues/709})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L131">packages/core/src/shapes/Shapes.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L138">packages/core/src/shapes/Shapes.ts:138</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="rectangle" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Rectangle</h3>
-					<div class="tsd-signature tsd-kind-icon">Rectangle<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleRectangle,constr: makeRectangle,bbox: BBox.bboxFromRect,isRectlike: true,})</span></div>
+					<div class="tsd-signature tsd-kind-icon">Rectangle<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleRectangle,constr: makeRectangle,bbox: BBox.bboxFromRect,isRectlike: true,isPolygonlike: true,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L138">packages/core/src/shapes/Shapes.ts:138</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L145">packages/core/src/shapes/Shapes.ts:145</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="text" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Text</h3>
-					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleText,constr: makeText,bbox: BBox.bboxFromRectlike, // assumes w and h correspond to stringisRectlike: true,})</span></div>
+					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a><span class="tsd-signature-symbol"> = ShapeDef({sampler: sampleText,constr: makeText,bbox: BBox.bboxFromRectlike, // assumes w and h correspond to stringisRectlike: true,isPolygonlike: true,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L146">packages/core/src/shapes/Shapes.ts:146</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L154">packages/core/src/shapes/Shapes.ts:154</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,19 +235,19 @@
 					<a name="shapedef-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Shape<wbr>Def</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">Shape<wbr>Def<span class="tsd-signature-symbol">(</span>shapedef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>bbox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">BBox.BBox</span><span class="tsd-signature-symbol">; </span>constr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a>, properties<span class="tsd-signature-symbol">: </span><a href="../interfaces/_shapes_shapes_.properties.html" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_shapes_shapes_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol">; </span>isLinelike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>isRectlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>sampler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></li>
+						<li class="tsd-signature tsd-kind-icon">Shape<wbr>Def<span class="tsd-signature-symbol">(</span>shapedef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>bbox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">BBox.BBox</span><span class="tsd-signature-symbol">; </span>constr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a>, properties<span class="tsd-signature-symbol">: </span><a href="../interfaces/_shapes_shapes_.properties.html" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_shapes_shapes_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol">; </span>isLinelike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>isPolygonlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>isRectlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>sampler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L49">packages/core/src/shapes/Shapes.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L50">packages/core/src/shapes/Shapes.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>shapedef: <span class="tsd-signature-symbol">{ </span>bbox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">BBox.BBox</span><span class="tsd-signature-symbol">; </span>constr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a>, properties<span class="tsd-signature-symbol">: </span><a href="../interfaces/_shapes_shapes_.properties.html" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_shapes_shapes_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol">; </span>isLinelike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>isRectlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>sampler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>shapedef: <span class="tsd-signature-symbol">{ </span>bbox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">BBox.BBox</span><span class="tsd-signature-symbol">; </span>constr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a>, properties<span class="tsd-signature-symbol">: </span><a href="../interfaces/_shapes_shapes_.properties.html" class="tsd-signature-type">Properties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_shapes_shapes_.html#shape" class="tsd-signature-type">Shape</a><span class="tsd-signature-symbol">; </span>isLinelike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>isPolygonlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>isRectlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>sampler<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>canvas<span class="tsd-signature-symbol">: </span><a href="_shapes_samplers_.html#canvas" class="tsd-signature-type">Canvas</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>bbox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">BBox.BBox</span></h5>
@@ -298,6 +298,9 @@
 											<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Linelike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 										</li>
 										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Polygonlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+										</li>
+										<li class="tsd-parameter">
 											<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Rectlike<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 										</li>
 										<li class="tsd-parameter">
@@ -337,7 +340,7 @@
 					<div class="tsd-signature tsd-kind-icon">shapedefs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L154">packages/core/src/shapes/Shapes.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L163">packages/core/src/shapes/Shapes.ts:163</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -346,7 +349,7 @@
 						<div class="tsd-signature tsd-kind-icon">Circle<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L155">packages/core/src/shapes/Shapes.ts:155</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L164">packages/core/src/shapes/Shapes.ts:164</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -356,7 +359,7 @@
 						<div class="tsd-signature tsd-kind-icon">Ellipse<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L156">packages/core/src/shapes/Shapes.ts:156</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L165">packages/core/src/shapes/Shapes.ts:165</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -366,7 +369,7 @@
 						<div class="tsd-signature tsd-kind-icon">Equation<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L157">packages/core/src/shapes/Shapes.ts:157</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L166">packages/core/src/shapes/Shapes.ts:166</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -376,7 +379,7 @@
 						<div class="tsd-signature tsd-kind-icon">Image<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L158">packages/core/src/shapes/Shapes.ts:158</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L167">packages/core/src/shapes/Shapes.ts:167</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -386,7 +389,7 @@
 						<div class="tsd-signature tsd-kind-icon">Line<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L159">packages/core/src/shapes/Shapes.ts:159</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L168">packages/core/src/shapes/Shapes.ts:168</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -396,7 +399,7 @@
 						<div class="tsd-signature tsd-kind-icon">Path<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L160">packages/core/src/shapes/Shapes.ts:160</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L169">packages/core/src/shapes/Shapes.ts:169</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -406,7 +409,7 @@
 						<div class="tsd-signature tsd-kind-icon">Polygon<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L161">packages/core/src/shapes/Shapes.ts:161</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L170">packages/core/src/shapes/Shapes.ts:170</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -416,7 +419,7 @@
 						<div class="tsd-signature tsd-kind-icon">Polyline<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L162">packages/core/src/shapes/Shapes.ts:162</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L171">packages/core/src/shapes/Shapes.ts:171</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -426,7 +429,7 @@
 						<div class="tsd-signature tsd-kind-icon">Rectangle<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L163">packages/core/src/shapes/Shapes.ts:163</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L172">packages/core/src/shapes/Shapes.ts:172</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -436,7 +439,7 @@
 						<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_shapes_shapes_.shapedef.html" class="tsd-signature-type">ShapeDef</a></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/shapes/Shapes.ts#L164">packages/core/src/shapes/Shapes.ts:164</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/shapes/Shapes.ts#L173">packages/core/src/shapes/Shapes.ts:173</a></li>
 							</ul>
 						</aside>
 					</section>

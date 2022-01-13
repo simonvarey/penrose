@@ -78,7 +78,9 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_contrib_minkowski_.html#convexpolygonminkowskisdfonesided" class="tsd-kind-icon">convex<wbr>Polygon<wbr>MinkowskiSDFOne<wbr>Sided</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#halfplanesdf" class="tsd-kind-icon">half<wbr>PlaneSDF</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#outwardunitnormal" class="tsd-kind-icon">outward<wbr>Unit<wbr>Normal</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#overlappingpolygonpoints" class="tsd-kind-icon">overlapping<wbr>Polygon<wbr>Points</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#rectangledifference" class="tsd-kind-icon">rectangle<wbr>Difference</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#rectanglesigneddistance" class="tsd-kind-icon">rectangle<wbr>Signed<wbr>Distance</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_contrib_minkowski_.html#signof" class="tsd-kind-icon">sign<wbr>Of</a></li>
 							</ul>
 						</section>
@@ -97,7 +99,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L139">packages/core/src/contrib/Minkowski.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L144">packages/core/src/contrib/Minkowski.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -130,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L124">packages/core/src/contrib/Minkowski.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L129">packages/core/src/contrib/Minkowski.ts:129</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L102">packages/core/src/contrib/Minkowski.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L107">packages/core/src/contrib/Minkowski.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -229,7 +231,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L83">packages/core/src/contrib/Minkowski.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L88">packages/core/src/contrib/Minkowski.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L65">packages/core/src/contrib/Minkowski.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L70">packages/core/src/contrib/Minkowski.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,21 +320,71 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="rectangledifference" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> rectangle<wbr>Difference</h3>
+					<a name="overlappingpolygonpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> overlapping<wbr>Polygon<wbr>Points</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">rectangle<wbr>Difference<span class="tsd-signature-symbol">(</span>box1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BBox.BBox</span>, box2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BBox.BBox</span>, padding<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">overlapping<wbr>Polygon<wbr>Points<span class="tsd-signature-symbol">(</span>polygonPoints1<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, polygonPoints2<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, padding<span class="tsd-signature-symbol">?: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L24">packages/core/src/contrib/Minkowski.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L156">packages/core/src/contrib/Minkowski.ts:156</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Overlapping constraint function for polygon points with padding <code>padding</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>polygonPoints1: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Sequence of points defining a polygon.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>polygonPoints2: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Sequence of points defining a polygon.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> padding: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol"> = constOf(0.0)</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Padding applied to one of the polygons.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="rectangledifference" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> rectangle<wbr>Difference</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">rectangle<wbr>Difference<span class="tsd-signature-symbol">(</span>box1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BBox.BBox</span>, box2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BBox.BBox</span>, padding<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a><span class="tsd-signature-symbol">, </span><a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a><span class="tsd-signature-symbol">]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L29">packages/core/src/contrib/Minkowski.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Compute coordinates of Minkowski sum of AABBs representing the first rectangle <code>box1</code> and the negative of the second rectangle <code>box2</code>.
+										Returns coordinates of the bottom left and top right corners.
 									Note: This is not the Minkowski difference in the classical sense, rather just a Minkowski sum of A and -B.</p>
 								</div>
 							</div>
@@ -363,7 +415,38 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a><span class="tsd-signature-symbol">, </span><a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="rectanglesigneddistance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> rectangle<wbr>Signed<wbr>Distance</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">rectangle<wbr>Signed<wbr>Distance<span class="tsd-signature-symbol">(</span>bottomLeft<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a>, topRight<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L173">packages/core/src/contrib/Minkowski.ts:173</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the signed distance from a rectangle at the origin.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bottomLeft: <a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a></h5>
+								</li>
+								<li>
+									<h5>topRight: <a href="_types_ad_.html#pt2" class="tsd-signature-type">Pt2</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -377,7 +460,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/52972af/packages/core/src/contrib/Minkowski.ts#L55">packages/core/src/contrib/Minkowski.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7d5538b/packages/core/src/contrib/Minkowski.ts#L60">packages/core/src/contrib/Minkowski.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +509,13 @@
 						<a href="_contrib_minkowski_.html#outwardunitnormal" class="tsd-kind-icon">outward<wbr>Unit<wbr>Normal</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_contrib_minkowski_.html#overlappingpolygonpoints" class="tsd-kind-icon">overlapping<wbr>Polygon<wbr>Points</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_contrib_minkowski_.html#rectangledifference" class="tsd-kind-icon">rectangle<wbr>Difference</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_contrib_minkowski_.html#rectanglesigneddistance" class="tsd-kind-icon">rectangle<wbr>Signed<wbr>Distance</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_contrib_minkowski_.html#signof" class="tsd-kind-icon">sign<wbr>Of</a>
