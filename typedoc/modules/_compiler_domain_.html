@@ -79,7 +79,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_compiler_domain_.html#bottomname" class="tsd-kind-icon">bottom<wbr>Name</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_compiler_domain_.html#builtintypes" class="tsd-kind-icon">builtin<wbr>Types</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="_compiler_domain_.html#topname" class="tsd-kind-icon">top<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -118,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">Checker<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">, </span><a href="_types_errors_.html#domainerror" class="tsd-signature-type">DomainError</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L79">packages/core/src/compiler/Domain.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L82">packages/core/src/compiler/Domain.ts:82</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -126,12 +128,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-					<a name="builtintypes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> builtin<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">builtin<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_domain_.typedecl.html" class="tsd-signature-type">TypeDecl</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[&quot;String&quot;,{start: { line: 1, col: 1 },end: { line: 1, col: 1 },nodeType: &quot;Substance&quot;,children: [],tag: &quot;TypeDecl&quot;,name: idOf(&quot;String&quot;, &quot;Domain&quot;),params: [],superTypes: [],},],]</span></div>
+					<a name="bottomname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> bottom<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">bottom<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_ast_.sourcerange.html" class="tsd-signature-type">SourceRange</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = idOf(&quot;void&quot;, &quot;Domain&quot;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L82">packages/core/src/compiler/Domain.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L396">packages/core/src/compiler/Domain.ts:396</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="builtintypes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> builtin<wbr>Types</h3>
+					<div class="tsd-signature tsd-kind-icon">builtin<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_domain_.html#typedecl" class="tsd-signature-type">TypeDecl</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[&quot;String&quot;,{start: { line: 1, col: 1 },end: { line: 1, col: 1 },nodeType: &quot;Substance&quot;,children: [],tag: &quot;TypeDecl&quot;,name: idOf(&quot;String&quot;, &quot;Domain&quot;),params: [],superTypes: [],},],]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L85">packages/core/src/compiler/Domain.ts:85</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="topname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> top<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">top<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_ast_.sourcerange.html" class="tsd-signature-type">SourceRange</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = idOf(&quot;type&quot;, &quot;Domain&quot;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L387">packages/core/src/compiler/Domain.ts:387</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,22 +164,22 @@
 					<a name="addsubtype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Subtype</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Subtype<span class="tsd-signature-symbol">(</span>subType<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a>, superType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Subtype<span class="tsd-signature-symbol">(</span>subType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span>, superType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L291">packages/core/src/compiler/Domain.ts:291</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L301">packages/core/src/compiler/Domain.ts:301</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>subType: <a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a></h5>
+									<h5>subType: <a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>superType: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a></h5>
+									<h5>superType: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>env: <a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a></h5>
@@ -171,19 +193,19 @@
 					<a name="checkarg" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Arg</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Arg<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.arg.html" class="tsd-signature-type">Arg</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Arg<span class="tsd-signature-symbol">(</span>arg<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#arg" class="tsd-signature-type">Arg</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L288">packages/core/src/compiler/Domain.ts:288</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L298">packages/core/src/compiler/Domain.ts:298</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>arg: <a href="../interfaces/_types_domain_.arg.html" class="tsd-signature-type">Arg</a></h5>
+									<h5>arg: <a href="_types_domain_.html#arg" class="tsd-signature-type">Arg</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>env: <a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a></h5>
@@ -197,13 +219,13 @@
 					<a name="checkdomain" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Domain</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Domain<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.domainprog.html" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Domain<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#domainprog" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L115">packages/core/src/compiler/Domain.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L121">packages/core/src/compiler/Domain.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,7 +236,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>prog: <a href="../interfaces/_types_domain_.domainprog.html" class="tsd-signature-type">DomainProg</a></h5>
+									<h5>prog: <a href="_types_domain_.html#domainprog" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>compiled AST of a Domain program</p>
@@ -230,19 +252,19 @@
 					<a name="checkstmt" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Stmt</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Stmt<span class="tsd-signature-symbol">(</span>stmt<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#domainstmt" class="tsd-signature-type">DomainStmt</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Stmt<span class="tsd-signature-symbol">(</span>stmt<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#domainstmt" class="tsd-signature-type">DomainStmt</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_compiler_domain_.html#checkerresult" class="tsd-signature-type">CheckerResult</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L125">packages/core/src/compiler/Domain.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L131">packages/core/src/compiler/Domain.ts:131</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>stmt: <a href="_types_domain_.html#domainstmt" class="tsd-signature-type">DomainStmt</a></h5>
+									<h5>stmt: <a href="_types_domain_.html#domainstmt" class="tsd-signature-type">DomainStmt</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>env: <a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a></h5>
@@ -256,13 +278,13 @@
 					<a name="checktype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Type<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.typenotfound.html" class="tsd-signature-type">TypeNotFound</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_errors_.typevarnotfound.html" class="tsd-signature-type">TypeVarNotFound</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Type<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.typenotfound.html" class="tsd-signature-type">TypeNotFound</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_errors_.typevarnotfound.html" class="tsd-signature-type">TypeVarNotFound</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L246">packages/core/src/compiler/Domain.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L256">packages/core/src/compiler/Domain.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -273,7 +295,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a></h5>
+									<h5>type: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>type constructor, type variable, or prop to be checked.</p>
@@ -297,13 +319,13 @@
 					<a name="checktypeconstructor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Type<wbr>Constructor</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Type<wbr>Constructor<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.typenotfound.html" class="tsd-signature-type">TypeNotFound</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_errors_.typevarnotfound.html" class="tsd-signature-type">TypeVarNotFound</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Type<wbr>Constructor<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.typenotfound.html" class="tsd-signature-type">TypeNotFound</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_types_errors_.typevarnotfound.html" class="tsd-signature-type">TypeVarNotFound</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L268">packages/core/src/compiler/Domain.ts:268</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L278">packages/core/src/compiler/Domain.ts:278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -314,7 +336,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a></h5>
+									<h5>type: <a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>type constructor to be checked.</p>
@@ -344,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L66">packages/core/src/compiler/Domain.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L69">packages/core/src/compiler/Domain.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -377,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L307">packages/core/src/compiler/Domain.ts:307</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L317">packages/core/src/compiler/Domain.ts:317</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -400,7 +422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L97">packages/core/src/compiler/Domain.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L100">packages/core/src/compiler/Domain.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a></h4>
@@ -411,13 +433,13 @@
 					<a name="isdeclaredsubtype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Declared<wbr>Subtype</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Declared<wbr>Subtype<span class="tsd-signature-symbol">(</span>subType<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a>, superType<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Declared<wbr>Subtype<span class="tsd-signature-symbol">(</span>subType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, superType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L327">packages/core/src/compiler/Domain.ts:327</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L338">packages/core/src/compiler/Domain.ts:338</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,10 +451,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>subType: <a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a></h5>
+									<h5>subType: <a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>superType: <a href="../interfaces/_types_domain_.typeconstructor.html" class="tsd-signature-type">TypeConstructor</a></h5>
+									<h5>superType: <a href="_types_domain_.html#typeconstructor" class="tsd-signature-type">TypeConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>env: <a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a></h5>
@@ -450,22 +472,22 @@
 					<a name="issubtype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Subtype</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Subtype<span class="tsd-signature-symbol">(</span>subType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a>, superType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Subtype<span class="tsd-signature-symbol">(</span>subType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, superType<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, env<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L350">packages/core/src/compiler/Domain.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L361">packages/core/src/compiler/Domain.ts:361</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>subType: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a></h5>
+									<h5>subType: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>superType: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a></h5>
+									<h5>superType: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>env: <a href="../interfaces/_types_domain_.env.html" class="tsd-signature-type">Env</a></h5>
@@ -479,13 +501,13 @@
 					<a name="parsedomain" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> parse<wbr>Domain</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Domain<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.domainprog.html" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.parseerror.html" class="tsd-signature-type">ParseError</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Domain<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_domain_.html#domainprog" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.parseerror.html" class="tsd-signature-type">ParseError</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L44">packages/core/src/compiler/Domain.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L45">packages/core/src/compiler/Domain.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -494,7 +516,7 @@
 									<h5>prog: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_domain_.domainprog.html" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.parseerror.html" class="tsd-signature-type">ParseError</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_domain_.html#domainprog" class="tsd-signature-type">DomainProg</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_types_errors_.parseerror.html" class="tsd-signature-type">ParseError</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -502,13 +524,13 @@
 					<a name="showtype" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> show<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Type<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Type<span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L392">packages/core/src/compiler/Domain.ts:392</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L409">packages/core/src/compiler/Domain.ts:409</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -519,7 +541,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>t: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a></h5>
+									<h5>t: <a href="_types_domain_.html#type" class="tsd-signature-type">Type</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#c" class="tsd-signature-type">C</a><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Type to be printed</p>
@@ -540,7 +562,7 @@
 					<div class="tsd-signature tsd-kind-icon">bottom<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L382">packages/core/src/compiler/Domain.ts:382</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L397">packages/core/src/compiler/Domain.ts:397</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -549,17 +571,37 @@
 						<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L385">packages/core/src/compiler/Domain.ts:385</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L402">packages/core/src/compiler/Domain.ts:402</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="bottomtype.children" class="tsd-anchor"></a>
+						<h3>children</h3>
+						<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_ast_.sourcerange.html" class="tsd-signature-type">SourceRange</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [bottomName]</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L400">packages/core/src/compiler/Domain.ts:400</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="bottomtype.name" class="tsd-anchor"></a>
 						<h3>name</h3>
-						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_ast_.identifier.html" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol"> = idOf(&quot;void&quot;, &quot;Domain&quot;)</span></div>
+						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_ast_.sourcerange.html" class="tsd-signature-type">SourceRange</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = bottomName</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L384">packages/core/src/compiler/Domain.ts:384</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L401">packages/core/src/compiler/Domain.ts:401</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="bottomtype.nodetype" class="tsd-anchor"></a>
+						<h3>node<wbr>Type</h3>
+						<div class="tsd-signature tsd-kind-icon">node<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Domain"</span><span class="tsd-signature-symbol"> = &quot;Domain&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L399">packages/core/src/compiler/Domain.ts:399</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -569,7 +611,7 @@
 						<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"TypeConstructor"</span><span class="tsd-signature-symbol"> = &quot;TypeConstructor&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L383">packages/core/src/compiler/Domain.ts:383</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L398">packages/core/src/compiler/Domain.ts:398</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -580,7 +622,7 @@
 					<div class="tsd-signature tsd-kind-icon">top<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L376">packages/core/src/compiler/Domain.ts:376</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L388">packages/core/src/compiler/Domain.ts:388</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -589,17 +631,37 @@
 						<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L379">packages/core/src/compiler/Domain.ts:379</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L393">packages/core/src/compiler/Domain.ts:393</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="toptype.children-1" class="tsd-anchor"></a>
+						<h3>children</h3>
+						<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_ast_.sourcerange.html" class="tsd-signature-type">SourceRange</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [topName]</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L391">packages/core/src/compiler/Domain.ts:391</a></li>
 							</ul>
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="toptype.name-1" class="tsd-anchor"></a>
 						<h3>name</h3>
-						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_types_ast_.identifier.html" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol"> = idOf(&quot;type&quot;, &quot;Domain&quot;)</span></div>
+						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_ast_.sourcerange.html" class="tsd-signature-type">SourceRange</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = topName</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L378">packages/core/src/compiler/Domain.ts:378</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L392">packages/core/src/compiler/Domain.ts:392</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="toptype.nodetype-1" class="tsd-anchor"></a>
+						<h3>node<wbr>Type</h3>
+						<div class="tsd-signature tsd-kind-icon">node<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Domain"</span><span class="tsd-signature-symbol"> = &quot;Domain&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L390">packages/core/src/compiler/Domain.ts:390</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -609,7 +671,7 @@
 						<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"TypeConstructor"</span><span class="tsd-signature-symbol"> = &quot;TypeConstructor&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/compiler/Domain.ts#L377">packages/core/src/compiler/Domain.ts:377</a></li>
+								<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/compiler/Domain.ts#L389">packages/core/src/compiler/Domain.ts:389</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -633,7 +695,13 @@
 						<a href="_compiler_domain_.html#checkerresult" class="tsd-kind-icon">Checker<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_compiler_domain_.html#bottomname" class="tsd-kind-icon">bottom<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_compiler_domain_.html#builtintypes" class="tsd-kind-icon">builtin<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_compiler_domain_.html#topname" class="tsd-kind-icon">top<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="_compiler_domain_.html#addsubtype" class="tsd-kind-icon">add<wbr>Subtype</a>

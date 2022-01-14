@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Identifier | @penrose/core</title>
+	<title>SourceRange | @penrose/core</title>
 	<meta name="description" content="Documentation for @penrose/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_types_ast_.html">&quot;types/ast&quot;</a>
 				</li>
 				<li>
-					<a href="_types_ast_.identifier.html">Identifier</a>
+					<a href="_types_ast_.sourcerange.html">SourceRange</a>
 				</li>
 			</ul>
-			<h1>Interface Identifier</h1>
+			<h1>Interface SourceRange</h1>
 		</div>
 	</div>
 </header>
@@ -73,12 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="../modules/_types_ast_.html#astnode" class="tsd-signature-type">ASTNode</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">Identifier</span>
-							</li>
-						</ul>
+						<span class="target">SourceRange</span>
 					</li>
 				</ul>
 			</section>
@@ -89,9 +84,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_ast_.identifier.html#tag" class="tsd-kind-icon">tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_ast_.identifier.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_ast_.identifier.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_ast_.sourcerange.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_ast_.sourcerange.html#start" class="tsd-kind-icon">start</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,32 +94,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tag" class="tsd-anchor"></a>
-					<h3>tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Identifier"</span></div>
+					<a name="end" class="tsd-anchor"></a>
+					<h3>end</h3>
+					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.sourceloc.html" class="tsd-signature-type">SourceLoc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/types/ast.ts#L36">packages/core/src/types/ast.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/types/ast.ts#L9">packages/core/src/types/ast.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="start" class="tsd-anchor"></a>
+					<h3>start</h3>
+					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="_types_ast_.sourceloc.html" class="tsd-signature-type">SourceLoc</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/types/ast.ts#L37">packages/core/src/types/ast.ts:37</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7b5dd6a/packages/core/src/types/ast.ts#L38">packages/core/src/types/ast.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/6a89b03/packages/core/src/types/ast.ts#L8">packages/core/src/types/ast.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,46 +129,55 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_ast_.concretenode.html" class="tsd-kind-icon">Concrete<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_ast_.istringlit.html" class="tsd-kind-icon">IString<wbr>Lit</a>
+						<a href="_types_ast_.sourceloc.html" class="tsd-kind-icon">Source<wbr>Loc</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_ast_.identifier.html" class="tsd-kind-icon">Identifier</a>
+						<a href="_types_ast_.sourcerange.html" class="tsd-kind-icon">Source<wbr>Range</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_ast_.identifier.html#tag" class="tsd-kind-icon">tag</a>
+								<a href="_types_ast_.sourcerange.html#end" class="tsd-kind-icon">end</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_ast_.identifier.html#type" class="tsd-kind-icon">type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_ast_.identifier.html#value" class="tsd-kind-icon">value</a>
+								<a href="_types_ast_.sourcerange.html#start" class="tsd-kind-icon">start</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_ast_.sourceloc.html" class="tsd-kind-icon">Source<wbr>Loc</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_ast_.html#a" class="tsd-kind-icon">A</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_types_ast_.syntheticnode.html" class="tsd-kind-icon">Synthetic<wbr>Node</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_types_ast_.html#astnode" class="tsd-kind-icon">ASTNode</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/_types_ast_.html#astnode" class="tsd-kind-icon">ASTNode</a>
+						<a href="../modules/_types_ast_.html#abstractnode" class="tsd-kind-icon">Abstract<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_ast_.html#c" class="tsd-kind-icon">C</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_ast_.html#concretenode" class="tsd-kind-icon">Concrete<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_types_ast_.html#istringlit" class="tsd-kind-icon">IString<wbr>Lit</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/_types_ast_.html#identifier" class="tsd-kind-icon">Identifier</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/_types_ast_.html#nodetype" class="tsd-kind-icon">Node<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
-						<a href="../modules/_types_ast_.html#optional" class="tsd-kind-icon">Optional</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_types_ast_.html#syntheticnode" class="tsd-kind-icon">Synthetic<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="../modules/_types_ast_.html#metaprops" class="tsd-kind-icon">meta<wbr>Props</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_types_ast_.html#metaobj" class="tsd-kind-icon">meta<wbr>Obj</a>
 					</li>
 				</ul>
 			</nav>
