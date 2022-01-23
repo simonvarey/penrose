@@ -73,6 +73,8 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_contrib_minkowski_.html#containsconvexpolygonpoints" class="tsd-kind-icon">contains<wbr>Convex<wbr>Polygon<wbr>Points</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#containspolygonpoints" class="tsd-kind-icon">contains<wbr>Polygon<wbr>Points</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#convexpartitions" class="tsd-kind-icon">convex<wbr>Partitions</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_contrib_minkowski_.html#convexpolygonminkowskisdf" class="tsd-kind-icon">convex<wbr>Polygon<wbr>MinkowskiSDF</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_contrib_minkowski_.html#convexpolygonminkowskisdfonesided" class="tsd-kind-icon">convex<wbr>Polygon<wbr>MinkowskiSDFOne<wbr>Sided</a></li>
@@ -89,6 +91,94 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="containsconvexpolygonpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> contains<wbr>Convex<wbr>Polygon<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">contains<wbr>Convex<wbr>Polygon<wbr>Points<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, p2<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span>, padding<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L203">packages/core/src/contrib/Minkowski.ts:203</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constraint checking whether <code>point</code> is inside a convex polygon with vertices <code>polygonPoints</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p1: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>p2: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>padding: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Padding applied to the polygon.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="containspolygonpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> contains<wbr>Polygon<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">contains<wbr>Polygon<wbr>Points<span class="tsd-signature-symbol">(</span>polygonPoints<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span>, point<span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span>, padding<span class="tsd-signature-symbol">?: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L226">packages/core/src/contrib/Minkowski.ts:226</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constraint checking whether <code>point</code> is inside a polygon with vertices <code>polygonPoints</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>polygonPoints: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Sequence of points defining a polygon.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Testing point.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> padding: <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a><span class="tsd-signature-symbol"> = constOf(0.0)</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Padding applied to the polygon.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_types_ad_.html#varad" class="tsd-signature-type">VarAD</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="convexpartitions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> convex<wbr>Partitions</h3>
@@ -99,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L144">packages/core/src/contrib/Minkowski.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L145">packages/core/src/contrib/Minkowski.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -132,7 +222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L129">packages/core/src/contrib/Minkowski.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L130">packages/core/src/contrib/Minkowski.ts:130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -181,7 +271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L107">packages/core/src/contrib/Minkowski.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L107">packages/core/src/contrib/Minkowski.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L88">packages/core/src/contrib/Minkowski.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L88">packages/core/src/contrib/Minkowski.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -288,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L70">packages/core/src/contrib/Minkowski.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L70">packages/core/src/contrib/Minkowski.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -329,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L156">packages/core/src/contrib/Minkowski.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L157">packages/core/src/contrib/Minkowski.ts:157</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L29">packages/core/src/contrib/Minkowski.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L29">packages/core/src/contrib/Minkowski.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +519,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L173">packages/core/src/contrib/Minkowski.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L174">packages/core/src/contrib/Minkowski.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,7 +550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c7f6b3/packages/core/src/contrib/Minkowski.ts#L60">packages/core/src/contrib/Minkowski.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/9b7ad99/packages/core/src/contrib/Minkowski.ts#L60">packages/core/src/contrib/Minkowski.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -493,6 +583,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_contrib_minkowski_.html#containsconvexpolygonpoints" class="tsd-kind-icon">contains<wbr>Convex<wbr>Polygon<wbr>Points</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_contrib_minkowski_.html#containspolygonpoints" class="tsd-kind-icon">contains<wbr>Polygon<wbr>Points</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_contrib_minkowski_.html#convexpartitions" class="tsd-kind-icon">convex<wbr>Partitions</a>
 					</li>
