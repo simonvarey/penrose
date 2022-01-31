@@ -199,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">Fn<wbr>Evaled<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_index_.ifnevaled.html" class="tsd-signature-type">IFnEvaled</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L286">packages/core/src/index.ts:286</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L304">packages/core/src/index.ts:304</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -209,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">Penrose<wbr>Fn<span class="tsd-signature-symbol">:</span> <a href="_types_state_.html#fn" class="tsd-signature-type">Fn</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L333">packages/core/src/index.ts:333</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L351">packages/core/src/index.ts:351</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -219,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">Penrose<wbr>State<span class="tsd-signature-symbol">:</span> <a href="_types_state_.html#state" class="tsd-signature-type">State</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L332">packages/core/src/index.ts:332</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L350">packages/core/src/index.ts:350</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Consola</span><span class="tsd-signature-symbol"> = consola.create({ level: LogLevel.Warn }).withScope(&quot;Top Level&quot;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L42">packages/core/src/index.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L44">packages/core/src/index.ts:44</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -243,13 +243,13 @@
 					<a name="compiletrio" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> compile<wbr>Trio</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">compile<wbr>Trio<span class="tsd-signature-symbol">(</span>domainProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, styProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><a href="_index_.html#penroseerror" class="tsd-signature-type">PenroseError</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">compile<wbr>Trio<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><a href="_index_.html#penroseerror" class="tsd-signature-type">PenroseError</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L170">packages/core/src/index.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L179">packages/core/src/index.ts:179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -260,28 +260,21 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>domainProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Domain program string</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>subProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Substance program string</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>styProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Style program string</p>
-										</div>
-									</div>
+									<h5>prog: <span class="tsd-signature-symbol">{ </span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_index_.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">, </span><a href="_index_.html#penroseerror" class="tsd-signature-type">PenroseError</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -292,13 +285,13 @@
 					<a name="diagram" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> diagram</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">diagram<span class="tsd-signature-symbol">(</span>domainProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, styProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, pathResolver<span class="tsd-signature-symbol">: </span><a href="_index_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">diagram<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span>, node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, pathResolver<span class="tsd-signature-symbol">: </span><a href="_index_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L103">packages/core/src/index.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L104">packages/core/src/index.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -309,28 +302,21 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>domainProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Domain program string</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>subProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Substance program string</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>styProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Style program string</p>
-										</div>
-									</div>
+									<h5>prog: <span class="tsd-signature-symbol">{ </span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
@@ -358,7 +344,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L272">packages/core/src/index.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L290">packages/core/src/index.ts:290</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L299">packages/core/src/index.ts:299</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L317">packages/core/src/index.ts:317</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -428,13 +414,13 @@
 					<a name="interactivediagram" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> interactive<wbr>Diagram</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">interactive<wbr>Diagram<span class="tsd-signature-symbol">(</span>domainProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, styProg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, pathResolver<span class="tsd-signature-symbol">: </span><a href="_index_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">interactive<wbr>Diagram<span class="tsd-signature-symbol">(</span>prog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span>, node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, pathResolver<span class="tsd-signature-symbol">: </span><a href="_index_.html#pathresolver" class="tsd-signature-type">PathResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L131">packages/core/src/index.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L136">packages/core/src/index.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,28 +431,21 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>domainProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Domain program string</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>subProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Substance program string</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>styProg: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a Style program string</p>
-										</div>
-									</div>
+									<h5>prog: <span class="tsd-signature-symbol">{ </span>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>domain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>style<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>substance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>variation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
 								</li>
 								<li>
 									<h5>node: <span class="tsd-signature-type">HTMLElement</span></h5>
@@ -494,7 +473,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L194">packages/core/src/index.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L204">packages/core/src/index.ts:204</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -527,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L246">packages/core/src/index.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L258">packages/core/src/index.ts:258</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -554,18 +533,18 @@
 					<a name="resample" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> resample</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">resample<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a>, numSamples<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a></li>
+						<li class="tsd-signature tsd-kind-icon">resample<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_state_.html#state" class="tsd-signature-type">State</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L49">packages/core/src/index.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L50">packages/core/src/index.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Resample all shapes in the state by generating a number of samples (<code>numSamples</code>) and picking the sample with the lowest initial energy value.</p>
+									<p>Use the current resample seed to sample all shapes in the State.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -575,14 +554,6 @@
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>current state</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>numSamples: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>number of samples to choose from</p>
 										</div>
 									</div>
 								</li>
@@ -601,7 +572,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L231">packages/core/src/index.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L243">packages/core/src/index.ts:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -634,7 +605,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L238">packages/core/src/index.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L250">packages/core/src/index.ts:250</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -667,7 +638,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L58">packages/core/src/index.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L59">packages/core/src/index.ts:59</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -708,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L66">packages/core/src/index.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L67">packages/core/src/index.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -744,7 +715,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/7c84f09/packages/core/src/index.ts#L86">packages/core/src/index.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/baabbe6/packages/core/src/index.ts#L87">packages/core/src/index.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
