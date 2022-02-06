@@ -81,6 +81,8 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_synthesis_mutation_.replaceexprname.html" class="tsd-kind-icon">Replace<wbr>Expr<wbr>Name</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_synthesis_mutation_.replacestmtname.html" class="tsd-kind-icon">Replace<wbr>Stmt<wbr>Name</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_synthesis_mutation_.swapexprargs.html" class="tsd-kind-icon">Swap<wbr>Expr<wbr>Args</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_synthesis_mutation_.swapinexprargs.html" class="tsd-kind-icon">Swap<wbr>InExpr<wbr>Args</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_synthesis_mutation_.swapinstmtargs.html" class="tsd-kind-icon">Swap<wbr>InStmt<wbr>Args</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/_synthesis_mutation_.swapstmtargs.html" class="tsd-kind-icon">Swap<wbr>Stmt<wbr>Args</a></li>
 							</ul>
 						</section>
@@ -107,6 +109,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#checkreplaceexprname" class="tsd-kind-icon">check<wbr>Replace<wbr>Expr<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#checkreplacestmtname" class="tsd-kind-icon">check<wbr>Replace<wbr>Stmt<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#checkswapexprargs" class="tsd-kind-icon">check<wbr>Swap<wbr>Expr<wbr>Args</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#checkswapinexprargs" class="tsd-kind-icon">check<wbr>Swap<wbr>InExpr<wbr>Args</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#checkswapinstmtargs" class="tsd-kind-icon">check<wbr>Swap<wbr>InStmt<wbr>Args</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#checkswapstmtargs" class="tsd-kind-icon">check<wbr>Swap<wbr>Stmt<wbr>Args</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#deletemutation" class="tsd-kind-icon">delete<wbr>Mutation</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_synthesis_mutation_.html#executemutation" class="tsd-kind-icon">execute<wbr>Mutation</a></li>
@@ -129,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">Mutation<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_synthesis_mutation_.add.html" class="tsd-signature-type">Add</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.delete.html" class="tsd-signature-type">Delete</a><span class="tsd-signature-symbol"> | </span><a href="_synthesis_mutation_.html#update" class="tsd-signature-type">Update</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L23">packages/core/src/synthesis/Mutation.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L30">packages/core/src/synthesis/Mutation.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">Mutation<wbr>Group<span class="tsd-signature-symbol">:</span> <a href="_synthesis_mutation_.html#mutation" class="tsd-signature-type">Mutation</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L22">packages/core/src/synthesis/Mutation.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L29">packages/core/src/synthesis/Mutation.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -149,17 +153,17 @@
 					<div class="tsd-signature tsd-kind-icon">Mutation<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Mutation</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"tag"</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L24">packages/core/src/synthesis/Mutation.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L31">packages/core/src/synthesis/Mutation.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>Update</h3>
-					<div class="tsd-signature tsd-kind-icon">Update<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_synthesis_mutation_.swapexprargs.html" class="tsd-signature-type">SwapExprArgs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.swapstmtargs.html" class="tsd-signature-type">SwapStmtArgs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.replacestmtname.html" class="tsd-signature-type">ReplaceStmtName</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.replaceexprname.html" class="tsd-signature-type">ReplaceExprName</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.changestmttype.html" class="tsd-signature-type">ChangeStmtType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.changeexprtype.html" class="tsd-signature-type">ChangeExprType</a></div>
+					<div class="tsd-signature tsd-kind-icon">Update<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_synthesis_mutation_.swapexprargs.html" class="tsd-signature-type">SwapExprArgs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.swapstmtargs.html" class="tsd-signature-type">SwapStmtArgs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.swapinstmtargs.html" class="tsd-signature-type">SwapInStmtArgs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.swapinexprargs.html" class="tsd-signature-type">SwapInExprArgs</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.replacestmtname.html" class="tsd-signature-type">ReplaceStmtName</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.replaceexprname.html" class="tsd-signature-type">ReplaceExprName</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.changestmttype.html" class="tsd-signature-type">ChangeStmtType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_synthesis_mutation_.changeexprtype.html" class="tsd-signature-type">ChangeExprType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L36">packages/core/src/synthesis/Mutation.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L43">packages/core/src/synthesis/Mutation.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L157">packages/core/src/synthesis/Mutation.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L187">packages/core/src/synthesis/Mutation.ts:187</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -199,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L172">packages/core/src/synthesis/Mutation.ts:172</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L202">packages/core/src/synthesis/Mutation.ts:202</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -233,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L356">packages/core/src/synthesis/Mutation.ts:356</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L484">packages/core/src/synthesis/Mutation.ts:484</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -273,7 +277,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L211">packages/core/src/synthesis/Mutation.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L241">packages/core/src/synthesis/Mutation.ts:241</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -320,7 +324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L202">packages/core/src/synthesis/Mutation.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L232">packages/core/src/synthesis/Mutation.ts:232</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -367,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L392">packages/core/src/synthesis/Mutation.ts:392</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L520">packages/core/src/synthesis/Mutation.ts:520</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -420,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L369">packages/core/src/synthesis/Mutation.ts:369</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L497">packages/core/src/synthesis/Mutation.ts:497</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -470,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L346">packages/core/src/synthesis/Mutation.ts:346</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L474">packages/core/src/synthesis/Mutation.ts:474</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -496,7 +500,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L310">packages/core/src/synthesis/Mutation.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L438">packages/core/src/synthesis/Mutation.ts:438</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -540,7 +544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L285">packages/core/src/synthesis/Mutation.ts:285</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L413">packages/core/src/synthesis/Mutation.ts:413</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -584,7 +588,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L247">packages/core/src/synthesis/Mutation.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L277">packages/core/src/synthesis/Mutation.ts:277</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -619,6 +623,142 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="checkswapinexprargs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Swap<wbr>InExpr<wbr>Args</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Swap<wbr>InExpr<wbr>Args<span class="tsd-signature-symbol">(</span>stmt<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#substmt" class="tsd-signature-type">SubStmt</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, cxt<span class="tsd-signature-symbol">: </span><a href="../interfaces/_synthesis_synthesizer_.synthesiscontext.html" class="tsd-signature-type">SynthesisContext</a>, pickSwap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#applyfunction" class="tsd-signature-type">ApplyFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#applyconstructor" class="tsd-signature-type">ApplyConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#func" class="tsd-signature-type">Func</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_synthesis_mutation_.swapinexprargs.html" class="tsd-signature-type">SwapInExprArgs</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L357">packages/core/src/synthesis/Mutation.ts:357</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stmt: <a href="_types_substance_.html#substmt" class="tsd-signature-type">SubStmt</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>cxt: <a href="../interfaces/_synthesis_synthesizer_.synthesiscontext.html" class="tsd-signature-type">SynthesisContext</a></h5>
+								</li>
+								<li>
+									<h5>pickSwap: <span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>options: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>element: <span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#applyfunction" class="tsd-signature-type">ApplyFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#applyconstructor" class="tsd-signature-type">ApplyConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#func" class="tsd-signature-type">Func</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#applyfunction" class="tsd-signature-type">ApplyFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#applyconstructor" class="tsd-signature-type">ApplyConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#func" class="tsd-signature-type">Func</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>p: <a href="_types_substance_.html#applyfunction" class="tsd-signature-type">ApplyFunction</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#applyconstructor" class="tsd-signature-type">ApplyConstructor</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="_types_substance_.html#func" class="tsd-signature-type">Func</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_synthesis_mutation_.swapinexprargs.html" class="tsd-signature-type">SwapInExprArgs</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="checkswapinstmtargs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Swap<wbr>InStmt<wbr>Args</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Swap<wbr>InStmt<wbr>Args<span class="tsd-signature-symbol">(</span>stmt<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#substmt" class="tsd-signature-type">SubStmt</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span>, cxt<span class="tsd-signature-symbol">: </span><a href="../interfaces/_synthesis_synthesizer_.synthesiscontext.html" class="tsd-signature-type">SynthesisContext</a>, pickSwap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#applypredicate" class="tsd-signature-type">ApplyPredicate</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_synthesis_mutation_.swapinstmtargs.html" class="tsd-signature-type">SwapInStmtArgs</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L315">packages/core/src/synthesis/Mutation.ts:315</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stmt: <a href="_types_substance_.html#substmt" class="tsd-signature-type">SubStmt</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>cxt: <a href="../interfaces/_synthesis_synthesizer_.synthesiscontext.html" class="tsd-signature-type">SynthesisContext</a></h5>
+								</li>
+								<li>
+									<h5>pickSwap: <span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>options: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <a href="_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>element: <span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#applypredicate" class="tsd-signature-type">ApplyPredicate</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><a href="_types_substance_.html#applypredicate" class="tsd-signature-type">ApplyPredicate</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>p: <a href="_types_substance_.html#applypredicate" class="tsd-signature-type">ApplyPredicate</a><span class="tsd-signature-symbol">&lt;</span><a href="_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_synthesis_mutation_.swapinstmtargs.html" class="tsd-signature-type">SwapInStmtArgs</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="checkswapstmtargs" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Swap<wbr>Stmt<wbr>Args</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -628,7 +768,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L220">packages/core/src/synthesis/Mutation.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L250">packages/core/src/synthesis/Mutation.ts:250</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -672,7 +812,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L151">packages/core/src/synthesis/Mutation.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L181">packages/core/src/synthesis/Mutation.ts:181</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -695,7 +835,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L123">packages/core/src/synthesis/Mutation.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L153">packages/core/src/synthesis/Mutation.ts:153</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -724,7 +864,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L129">packages/core/src/synthesis/Mutation.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L159">packages/core/src/synthesis/Mutation.ts:159</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -753,7 +893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L185">packages/core/src/synthesis/Mutation.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L215">packages/core/src/synthesis/Mutation.ts:215</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -787,7 +927,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L99">packages/core/src/synthesis/Mutation.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L123">packages/core/src/synthesis/Mutation.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -810,7 +950,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L95">packages/core/src/synthesis/Mutation.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L119">packages/core/src/synthesis/Mutation.ts:119</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -833,7 +973,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L140">packages/core/src/synthesis/Mutation.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L170">packages/core/src/synthesis/Mutation.ts:170</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -862,7 +1002,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/penrose/penrose/blob/eadf6a1/packages/core/src/synthesis/Mutation.ts#L167">packages/core/src/synthesis/Mutation.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L197">packages/core/src/synthesis/Mutation.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -924,6 +1064,12 @@
 						<a href="../interfaces/_synthesis_mutation_.swapexprargs.html" class="tsd-kind-icon">Swap<wbr>Expr<wbr>Args</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_synthesis_mutation_.swapinexprargs.html" class="tsd-kind-icon">Swap<wbr>InExpr<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_synthesis_mutation_.swapinstmtargs.html" class="tsd-kind-icon">Swap<wbr>InStmt<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/_synthesis_mutation_.swapstmtargs.html" class="tsd-kind-icon">Swap<wbr>Stmt<wbr>Args</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
@@ -970,6 +1116,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_synthesis_mutation_.html#checkswapexprargs" class="tsd-kind-icon">check<wbr>Swap<wbr>Expr<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_synthesis_mutation_.html#checkswapinexprargs" class="tsd-kind-icon">check<wbr>Swap<wbr>InExpr<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_synthesis_mutation_.html#checkswapinstmtargs" class="tsd-kind-icon">check<wbr>Swap<wbr>InStmt<wbr>Args</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_synthesis_mutation_.html#checkswapstmtargs" class="tsd-kind-icon">check<wbr>Swap<wbr>Stmt<wbr>Args</a>

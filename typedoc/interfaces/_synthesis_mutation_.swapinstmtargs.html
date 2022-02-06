@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SwapExprArgs | @penrose/core</title>
+	<title>SwapInStmtArgs | @penrose/core</title>
 	<meta name="description" content="Documentation for @penrose/core">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_synthesis_mutation_.html">&quot;synthesis/Mutation&quot;</a>
 				</li>
 				<li>
-					<a href="_synthesis_mutation_.swapexprargs.html">SwapExprArgs</a>
+					<a href="_synthesis_mutation_.swapinstmtargs.html">SwapInStmtArgs</a>
 				</li>
 			</ul>
-			<h1>Interface SwapExprArgs</h1>
+			<h1>Interface SwapInStmtArgs</h1>
 		</div>
 	</div>
 </header>
@@ -76,7 +76,7 @@
 						<a href="_synthesis_mutation_.imutation.html" class="tsd-signature-type">IMutation</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">SwapExprArgs</span>
+								<span class="target">SwapInStmtArgs</span>
 							</li>
 						</ul>
 					</li>
@@ -89,13 +89,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_synthesis_mutation_.swapexprargs.html#additionalmutations" class="tsd-kind-icon">additional<wbr>Mutations</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapexprargs.html#elem1" class="tsd-kind-icon">elem1</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapexprargs.html#elem2" class="tsd-kind-icon">elem2</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapexprargs.html#expr" class="tsd-kind-icon">expr</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_synthesis_mutation_.swapexprargs.html#mutate" class="tsd-kind-icon">mutate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapexprargs.html#stmt" class="tsd-kind-icon">stmt</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_synthesis_mutation_.swapexprargs.html#tag" class="tsd-kind-icon">tag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_synthesis_mutation_.swapinstmtargs.html#additionalmutations" class="tsd-kind-icon">additional<wbr>Mutations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapinstmtargs.html#elem" class="tsd-kind-icon">elem</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_synthesis_mutation_.swapinstmtargs.html#mutate" class="tsd-kind-icon">mutate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapinstmtargs.html#stmt" class="tsd-kind-icon">stmt</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_synthesis_mutation_.swapinstmtargs.html#swap" class="tsd-kind-icon">swap</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_synthesis_mutation_.swapinstmtargs.html#tag" class="tsd-kind-icon">tag</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,32 +114,12 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="elem1" class="tsd-anchor"></a>
-					<h3>elem1</h3>
-					<div class="tsd-signature tsd-kind-icon">elem1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="elem" class="tsd-anchor"></a>
+					<h3>elem</h3>
+					<div class="tsd-signature tsd-kind-icon">elem<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L73">packages/core/src/synthesis/Mutation.ts:73</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="elem2" class="tsd-anchor"></a>
-					<h3>elem2</h3>
-					<div class="tsd-signature tsd-kind-icon">elem2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L74">packages/core/src/synthesis/Mutation.ts:74</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="expr" class="tsd-anchor"></a>
-					<h3>expr</h3>
-					<div class="tsd-signature tsd-kind-icon">expr<span class="tsd-signature-symbol">:</span> <a href="../modules/_analysis_substanceanalysis_.html#argexpr" class="tsd-signature-type">ArgExpr</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L72">packages/core/src/synthesis/Mutation.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L80">packages/core/src/synthesis/Mutation.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,21 +164,31 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="stmt" class="tsd-anchor"></a>
 					<h3>stmt</h3>
-					<div class="tsd-signature tsd-kind-icon">stmt<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_substance_.html#bind" class="tsd-signature-type">Bind</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">stmt<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_substance_.html#applypredicate" class="tsd-signature-type">ApplyPredicate</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L71">packages/core/src/synthesis/Mutation.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L79">packages/core/src/synthesis/Mutation.ts:79</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="swap" class="tsd-anchor"></a>
+					<h3>swap</h3>
+					<div class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_ast_.html#identifier" class="tsd-signature-type">Identifier</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_ast_.html#a" class="tsd-signature-type">A</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L81">packages/core/src/synthesis/Mutation.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 					<a name="tag" class="tsd-anchor"></a>
 					<h3>tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"SwapExprArgs"</span></div>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"SwapInStmtArgs"</span></div>
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_synthesis_mutation_.imutation.html">IMutation</a>.<a href="_synthesis_mutation_.imutation.html#tag">tag</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L70">packages/core/src/synthesis/Mutation.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/penrose/penrose/blob/71b872b/packages/core/src/synthesis/Mutation.ts#L78">packages/core/src/synthesis/Mutation.ts:78</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,42 +228,39 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_synthesis_mutation_.replacestmtname.html" class="tsd-kind-icon">Replace<wbr>Stmt<wbr>Name</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_synthesis_mutation_.swapexprargs.html" class="tsd-kind-icon">Swap<wbr>Expr<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_synthesis_mutation_.swapinexprargs.html" class="tsd-kind-icon">Swap<wbr>InExpr<wbr>Args</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_synthesis_mutation_.swapexprargs.html" class="tsd-kind-icon">Swap<wbr>Expr<wbr>Args</a>
+						<a href="_synthesis_mutation_.swapinstmtargs.html" class="tsd-kind-icon">Swap<wbr>InStmt<wbr>Args</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_synthesis_mutation_.swapexprargs.html#additionalmutations" class="tsd-kind-icon">additional<wbr>Mutations</a>
+								<a href="_synthesis_mutation_.swapinstmtargs.html#additionalmutations" class="tsd-kind-icon">additional<wbr>Mutations</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_synthesis_mutation_.swapexprargs.html#elem1" class="tsd-kind-icon">elem1</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_synthesis_mutation_.swapexprargs.html#elem2" class="tsd-kind-icon">elem2</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_synthesis_mutation_.swapexprargs.html#expr" class="tsd-kind-icon">expr</a>
+								<a href="_synthesis_mutation_.swapinstmtargs.html#elem" class="tsd-kind-icon">elem</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_synthesis_mutation_.swapexprargs.html#mutate" class="tsd-kind-icon">mutate</a>
+								<a href="_synthesis_mutation_.swapinstmtargs.html#mutate" class="tsd-kind-icon">mutate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_synthesis_mutation_.swapexprargs.html#stmt" class="tsd-kind-icon">stmt</a>
+								<a href="_synthesis_mutation_.swapinstmtargs.html#stmt" class="tsd-kind-icon">stmt</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_synthesis_mutation_.swapinstmtargs.html#swap" class="tsd-kind-icon">swap</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-								<a href="_synthesis_mutation_.swapexprargs.html#tag" class="tsd-kind-icon">tag</a>
+								<a href="_synthesis_mutation_.swapinstmtargs.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_synthesis_mutation_.swapinexprargs.html" class="tsd-kind-icon">Swap<wbr>InExpr<wbr>Args</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_synthesis_mutation_.swapinstmtargs.html" class="tsd-kind-icon">Swap<wbr>InStmt<wbr>Args</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_synthesis_mutation_.swapstmtargs.html" class="tsd-kind-icon">Swap<wbr>Stmt<wbr>Args</a>
 					</li>
