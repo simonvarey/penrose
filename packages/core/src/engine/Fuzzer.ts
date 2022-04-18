@@ -79,7 +79,14 @@ export const fuzz = async (): Promise<void> => {
     }
   }
 
-  fs.writeFileSync("graph.json", stringifyGraph(g1, inputs), "utf8");
+  fs.writeFileSync(
+    "graph.json",
+    stringifyGraph(
+      { ...g1, primary: safe(g1.nodes.get(energyGraph), ":(") },
+      inputs
+    ),
+    "utf8"
+  );
 
   const g2 = makeGraph({
     primary: energyGraph,
@@ -90,11 +97,22 @@ export const fuzz = async (): Promise<void> => {
   const outputs = f(inputs);
 
   const secondary = Object.fromEntries(
-    pairs.map(([, id], i) => [id, outputs.secondary[i]])
+    pairs.map(([, id], i) => {
+      const x = outputs.secondary[i];
+      return [id, typeof x === "boolean" ? (x ? 1 : 0) : x];
+    })
   );
   fs.writeFileSync(
     "outputs.json",
-    `${JSON.stringify({ ...outputs, secondary }, null, 2)}\n`,
+    `${JSON.stringify(
+      {
+        gradient: outputs.gradient.slice(1),
+        primary: outputs.primary,
+        secondary,
+      },
+      null,
+      2
+    )}\n`,
     "utf8"
   );
 };

@@ -1,5 +1,5 @@
 {
-  "primary": "_-1",
+  "primary": "_0",
   "nodes": {
     "_0": {"tag":"Binary","binop":"+"},
     "_1": {"tag":"Binary","binop":"+"},
