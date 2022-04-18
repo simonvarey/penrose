@@ -349,7 +349,7 @@ export const makeGraph = (
   // separate stage, because these are the only nodes for which we actually need
   // to use the sensitivities of their in-edges, and then after we add the
   // edges, we need to get a topological sort of just these nodes
-  const primary = addNode(outputs.primary);
+  const primary = outputs.primary === 1 ? `_-1` : addNode(outputs.primary);
   while (!queue.isEmpty()) {
     addNode(queue.dequeue());
   }
@@ -918,7 +918,7 @@ export const genCode = ({
     // valid JavaScript syntax for array literals with gaps, so everything works
     // out perfectly
     `gradient: [${gradient.join(", ")}]`,
-    `primary: ${primary}`,
+    ...(primary === `_-1` ? [] : [`primary: ${primary}`]),
     `secondary: [${secondary.join(", ")}]`,
   ];
   stmts.push(`return { ${fields.join(", ")} };`);
