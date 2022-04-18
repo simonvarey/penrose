@@ -5,18 +5,30 @@ import { compileTrio, prepareState, resample, showError } from "index";
 import * as ad from "types/ad";
 import { safe } from "utils/Util";
 
-const stringifyGraph = ({ graph, primary }: ad.Graph) => {
+const stringifyNode = (node: ad.Node, inputs: number[]): string => {
+  let obj: any = node;
+  if (typeof node !== "number" && node.tag === "Input") {
+    obj = { ...obj, val: inputs[node.index] };
+  }
+  return JSON.stringify(obj);
+};
+
+const stringifyGraph = (
+  { graph, primary }: ad.Graph,
+  inputs: number[]
+): string => {
   const [node0, ...nodes] = graph.nodes();
   const strings = [
     `{\n  "primary": ${JSON.stringify(
       primary
-    )},\n  "nodes": {\n    ${JSON.stringify(node0)}: ${JSON.stringify(
-      graph.node(node0)
+    )},\n  "nodes": {\n    ${JSON.stringify(node0)}: ${stringifyNode(
+      graph.node(node0),
+      inputs
     )}`,
   ];
   for (const id of nodes) {
     strings.push(
-      `,\n    ${JSON.stringify(id)}: ${JSON.stringify(graph.node(id))}`
+      `,\n    ${JSON.stringify(id)}: ${stringifyNode(graph.node(id), inputs)}`
     );
   }
 
@@ -58,14 +70,7 @@ export const fuzz = async (): Promise<void> => {
   } = resample(await prepareState(res.value));
 
   const g1 = secondaryGraph([energyGraph]);
-  fs.writeFileSync("graph.json", stringifyGraph(g1), "utf8");
   const pairs = [...g1.nodes.entries()];
-
-  const g2 = makeGraph({
-    primary: energyGraph,
-    secondary: pairs.map(([v]) => v),
-  });
-  const f = genCode(g2);
 
   const inputs = [];
   for (const [v] of pairs) {
@@ -73,6 +78,15 @@ export const fuzz = async (): Promise<void> => {
       inputs[v.index] = v.val;
     }
   }
+
+  fs.writeFileSync("graph.json", stringifyGraph(g1, inputs), "utf8");
+
+  const g2 = makeGraph({
+    primary: energyGraph,
+    secondary: pairs.map(([v]) => v),
+  });
+  const f = genCode(g2);
+
   const outputs = f(inputs);
 
   const secondary = Object.fromEntries(
