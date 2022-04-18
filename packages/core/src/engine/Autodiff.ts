@@ -1059,7 +1059,7 @@ export const energyAndGradCompiled = (
   debug = false
 ) => {
   // Zero xsvars vals, gradients, and caching setting
-  clearGraphBottomUp(xsVars);
+  // clearGraphBottomUp(xsVars);
   clearVisitedNodes([energyGraph]);
 
   // Set the weight nodes to have the right weight values (may have been updated at some point during the opt)

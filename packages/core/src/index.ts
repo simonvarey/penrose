@@ -353,6 +353,7 @@ export type PenroseFn = Fn;
 export { constrDict } from "./contrib/Constraints";
 export { compDict } from "./contrib/Functions";
 export { objDict } from "./contrib/Objectives";
+export { fuzz } from "./engine/Fuzzer";
 export type { PathResolver } from "./renderer/Renderer";
 export { makeCanvas } from "./shapes/Samplers";
 export { shapedefs } from "./shapes/Shapes";
