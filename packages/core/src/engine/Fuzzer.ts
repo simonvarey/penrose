@@ -257,14 +257,13 @@ export const gradients = (): void => {
   for (const [id, v] of varADs) {
     const g = primaryGraph(v);
     const f = genCode(g);
-    const outputs = f(inputs);
-    const { gradient } = outputs;
+    const { primary, gradient } = f(inputs);
     fs.writeFileSync(
       `outputs/${id}.json`,
       `${JSON.stringify(
         {
-          ...outputs,
           gradient: inputs.map((x, i) => (i in gradient ? gradient[i] : 0)),
+          primary,
         },
         null,
         2
