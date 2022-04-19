@@ -1,6 +1,6 @@
 require("global-jsdom/register");
-import { fuzz } from "@penrose/core";
+import { gradients } from "@penrose/core";
 
 (async () => {
-  fuzz();
+  gradients();
 })();
