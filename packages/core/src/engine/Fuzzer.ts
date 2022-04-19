@@ -234,8 +234,9 @@ const translate = (node: ad.Node, children: Map<ad.Edge, VarAD>): VarAD => {
   }
 };
 
-export const gradients = (): void => {
-  const graph = getGraph();
+const translateAll = (
+  graph: graphlib.Graph
+): { varADs: Map<string, VarAD>; inputs: number[] } => {
   const varADs = new Map<string, VarAD>();
   const inputs = [];
   for (const id of graphlib.alg.topsort(graph)) {
@@ -254,6 +255,12 @@ export const gradients = (): void => {
       inputs[v.index] = v.val;
     }
   }
+  return { varADs, inputs };
+};
+
+export const gradients = (): void => {
+  const graph = getGraph();
+  const { varADs, inputs } = translateAll(graph);
   for (const [id, v] of varADs) {
     const g = primaryGraph(v);
     const f = genCode(g);
@@ -270,4 +277,65 @@ export const gradients = (): void => {
       )}\n`
     );
   }
+};
+
+// git checkout delta-main -- outputs/
+// git status --porcelain
+const different = new Set([
+  "_0",
+  "_1010",
+  "_11",
+  "_113",
+  "_1159",
+  "_1243",
+  "_1322",
+  "_1396",
+  "_150",
+  "_1606",
+  "_1630",
+  "_1658",
+  "_1687",
+  "_195",
+  "_2",
+  "_22",
+  "_237",
+  "_280",
+  "_327",
+  "_34",
+  "_381",
+  "_435",
+  "_49",
+  "_5",
+  "_500",
+  "_565",
+  "_630",
+  "_66",
+  "_696",
+  "_763",
+  "_827",
+  "_86",
+  "_889",
+  "_946",
+]);
+
+export const rank = (): void => {
+  const layers: string[][] = JSON.parse(fs.readFileSync("layers.json", "utf8"));
+  const ranks: { [layer: number]: string[] } = {};
+  layers.forEach((layer, i) => {
+    const filtered = layer.filter((id) => different.has(id));
+    if (filtered.length > 0) {
+      ranks[i] = filtered;
+    }
+  });
+  console.log(ranks);
+};
+
+export const pprint = (): void => {
+  const graph = getGraph();
+  const { varADs, inputs } = translateAll(graph);
+  const primary = "_1396";
+  fs.writeFileSync(
+    `graph${primary}.json`,
+    stringifyGraph(secondaryGraph([safe(varADs.get(primary), ":(")]), inputs)
+  );
 };

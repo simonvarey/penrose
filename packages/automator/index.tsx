@@ -1,6 +1,6 @@
 require("global-jsdom/register");
-import { gradients } from "@penrose/core";
+import { pprint } from "@penrose/core";
 
 (async () => {
-  gradients();
+  pprint();
 })();
