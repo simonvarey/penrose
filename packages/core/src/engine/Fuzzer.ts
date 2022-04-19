@@ -1,6 +1,62 @@
 import { Queue } from "@datastructures-js/queue";
 import { examples, registry } from "@penrose/examples";
+import {
+  constOf,
+  debug,
+  energyAndGradCompiled,
+  markInput,
+  varOf,
+} from "engine/Autodiff";
+import {
+  absVal,
+  acos,
+  acosh,
+  add,
+  addN,
+  and,
+  asin,
+  asinh,
+  atan,
+  atan2,
+  atanh,
+  cbrt,
+  ceil,
+  cos,
+  cosh,
+  div,
+  eq,
+  exp,
+  expm1,
+  floor,
+  gt,
+  ifCond,
+  inverse,
+  ln,
+  log10,
+  log1p,
+  log2,
+  lt,
+  max,
+  maxN,
+  min,
+  minN,
+  mul,
+  neg,
+  or,
+  pow,
+  round,
+  sign,
+  sin,
+  sinh,
+  sqrt,
+  squared,
+  sub,
+  tan,
+  tanh,
+  trunc,
+} from "engine/AutodiffFunctions";
 import * as fs from "fs";
+import * as graphlib from "graphlib";
 import { compileTrio, prepareState, showError } from "index";
 import { VarAD } from "types/ad";
 import { safe } from "utils/Util";
@@ -100,6 +156,7 @@ type Id = `_${number}`;
 const indexToID = (index: number): Id => `_${index}`;
 
 const indexToNaryEdge = (index: number): NaryEdge => `${index}`;
+const naryEdgeToIndex = (name: NaryEdge) => parseInt(name, 10);
 
 interface Child {
   child: VarAD;
@@ -286,4 +343,274 @@ export const fuzz = async (): Promise<void> => {
     )}\n`,
     "utf8"
   );
+};
+
+const getGraph = (): { primary: Id; graph: graphlib.Graph } => {
+  const graph = new graphlib.Graph({ multigraph: true });
+  const { primary, nodes, edges } = JSON.parse(
+    fs.readFileSync("graph.json", "utf8")
+  );
+  for (const [id, node] of Object.entries(nodes)) {
+    graph.setNode(id, node);
+  }
+  for (const { v, w, name } of edges) {
+    graph.setEdge(v, w, undefined, name);
+  }
+  return { primary, graph };
+};
+
+const translateUnary = ({ unop }: UnaryNode): ((param: VarAD) => VarAD) => {
+  switch (unop) {
+    case "neg": {
+      return neg;
+    }
+    case "squared": {
+      return squared;
+    }
+    case "inverse": {
+      return inverse;
+    }
+    case "sqrt": {
+      return sqrt;
+    }
+    case "abs": {
+      return absVal;
+    }
+    case "acosh": {
+      return acosh;
+    }
+    case "acos": {
+      return acos;
+    }
+    case "asin": {
+      return asin;
+    }
+    case "asinh": {
+      return asinh;
+    }
+    case "atan": {
+      return atan;
+    }
+    case "atanh": {
+      return atanh;
+    }
+    case "cbrt": {
+      return cbrt;
+    }
+    case "ceil": {
+      return ceil;
+    }
+    case "cos": {
+      return cos;
+    }
+    case "cosh": {
+      return cosh;
+    }
+    case "exp": {
+      return exp;
+    }
+    case "expm1": {
+      return expm1;
+    }
+    case "floor": {
+      return floor;
+    }
+    case "log": {
+      return ln;
+    }
+    case "log2": {
+      return log2;
+    }
+    case "log10": {
+      return log10;
+    }
+    case "log1p": {
+      return log1p;
+    }
+    case "round": {
+      return round;
+    }
+    case "sign": {
+      return sign;
+    }
+    case "sin": {
+      return sin;
+    }
+    case "sinh": {
+      return sinh;
+    }
+    case "tan": {
+      return tan;
+    }
+    case "tanh": {
+      return tanh;
+    }
+    case "trunc": {
+      return trunc;
+    }
+  }
+};
+
+const translateBinary = ({
+  binop,
+}: BinaryNode): ((left: VarAD, right: VarAD) => VarAD) => {
+  switch (binop) {
+    case "+": {
+      return add;
+    }
+    case "*": {
+      return mul;
+    }
+    case "-": {
+      return sub;
+    }
+    case "/": {
+      return div;
+    }
+    case ">": {
+      return gt;
+    }
+    case "<": {
+      return lt;
+    }
+    case "===": {
+      return eq;
+    }
+    case "&&": {
+      return and;
+    }
+    case "||": {
+      return or;
+    }
+    case "max": {
+      return max;
+    }
+    case "min": {
+      return min;
+    }
+    case "atan2": {
+      return atan2;
+    }
+    case "pow": {
+      return pow;
+    }
+  }
+};
+
+const translateNary = ({ op }: NaryNode): ((params: VarAD[]) => VarAD) => {
+  switch (op) {
+    case "addN": {
+      return addN;
+    }
+    case "maxN": {
+      return maxN;
+    }
+    case "minN": {
+      return minN;
+    }
+  }
+};
+
+const translateBack = (node: Node, children: Map<Edge, VarAD>): VarAD => {
+  if (typeof node === "number") {
+    return constOf(node);
+  }
+  switch (node.tag) {
+    case "Input": {
+      return markInput(varOf(node.val), node.index);
+    }
+    case "Unary": {
+      return translateUnary(node)(safe(children.get(undefined), ":("));
+    }
+    case "Binary": {
+      return translateBinary(node)(
+        safe(children.get("left"), ":("),
+        safe(children.get("right"), ":(")
+      );
+    }
+    case "Ternary": {
+      return ifCond(
+        safe(children.get("cond"), ":("),
+        safe(children.get("then"), ":("),
+        safe(children.get("els"), ":(")
+      );
+    }
+    case "Nary": {
+      const params: VarAD[] = [];
+      for (const [i, v] of children) {
+        params[naryEdgeToIndex(i as NaryEdge)] = v;
+      }
+      return translateNary(node)(params);
+    }
+    case "Debug": {
+      return debug(safe(children.get(undefined), ":("));
+    }
+  }
+};
+
+export const gradients = (): void => {
+  const { graph } = getGraph();
+  const sorted = graphlib.alg.topsort(graph);
+  for (const primary of graph.nodes()) {
+    const reachable = new Set<string>();
+    const queue = new Queue([primary]);
+    while (!queue.isEmpty()) {
+      const id = queue.dequeue();
+      if (!reachable.has(id)) {
+        reachable.add(id);
+        const preds = graph.predecessors(id);
+        if (!Array.isArray(preds)) {
+          throw Error(":(");
+        }
+        for (const pred of preds) {
+          queue.enqueue(pred);
+        }
+      }
+    }
+
+    const varADs = new Map<string, VarAD>();
+    const xsVars = [];
+    for (const id of sorted) {
+      const node: Node = graph.node(id);
+      if (
+        !(
+          reachable.has(id) ||
+          (typeof node !== "number" && node.tag === "Input")
+        )
+      ) {
+        continue;
+      }
+      const edges = graph.inEdges(id);
+      if (!Array.isArray(edges)) {
+        throw Error(":(");
+      }
+      const v = translateBack(
+        node,
+        new Map(
+          edges.map(({ v, name }) => [name as Edge, safe(varADs.get(v), ":(")])
+        )
+      );
+      varADs.set(id, v);
+      if (v.isInput) {
+        xsVars[v.index] = v;
+      }
+    }
+
+    const xs = xsVars.map(({ val }) => val);
+    const energyGraph = safe(varADs.get(primary), ":(");
+    if (energyGraph.isInput) {
+      continue;
+    }
+    const { f, gradf } = energyAndGradCompiled(
+      xs,
+      xsVars,
+      energyGraph,
+      undefined
+    );
+
+    fs.writeFileSync(
+      `outputs/${primary}.json`,
+      `${JSON.stringify({ gradient: gradf(xs), primary: f(xs) }, null, 2)}\n`
+    );
+  }
 };
