@@ -330,12 +330,64 @@ export const rank = (): void => {
   console.log(ranks);
 };
 
+const pprintNode = (node: ad.Node): string => {
+  if (typeof node === "number") {
+    return `${node}`;
+  }
+  switch (node.tag) {
+    case "Input": {
+      return `i${node.index}`;
+    }
+    case "Unary": {
+      return node.unop;
+    }
+    case "Binary": {
+      return node.binop;
+    }
+    case "Ternary": {
+      return "?:";
+    }
+    case "Nary": {
+      return node.op;
+    }
+    case "Debug": {
+      return `d${JSON.stringify(node.info)}`;
+    }
+  }
+};
+
+const noncommutative = new Set<ad.BinaryNode["binop"]>([
+  "-",
+  "/",
+  "atan2",
+  "pow",
+  ">",
+  "<",
+]);
+
 export const pprint = (): void => {
   const graph = getGraph();
-  const { varADs, inputs } = translateAll(graph);
+  const { varADs } = translateAll(graph);
   const primary = "_1396";
-  fs.writeFileSync(
-    `graph${primary}.json`,
-    stringifyGraph(secondaryGraph([safe(varADs.get(primary), ":(")]), inputs)
-  );
+  const g = secondaryGraph([safe(varADs.get(primary), ":(")]);
+
+  const lines = ["digraph {"];
+  for (const id of g.graph.nodes()) {
+    lines.push(`  ${id} [label = "${pprintNode(g.graph.node(id))}"];`);
+  }
+  for (const { v, w, name } of g.graph.edges()) {
+    const node = g.graph.node(w);
+    if (
+      name !== undefined &&
+      typeof node !== "number" &&
+      node.tag === "Binary" &&
+      noncommutative.has(node.binop)
+    ) {
+      lines.push(`  ${v} -> ${w} [label = "${name[0]}"];`);
+    } else {
+      lines.push(`  ${v} -> ${w};`);
+    }
+  }
+  lines.push("}", "");
+  fs.writeFileSync(`graph${primary}.gv`, lines.join("\n"), "utf8");
 };
