@@ -179,7 +179,7 @@ const translate = (v: VarAD): { node: Node; children: Child[] } => {
     if (isInput) {
       return { node: { tag: "Input", index: index + 1, val }, children: [] };
     } else {
-      throw Error(":(");
+      throw Error(":( #1");
     }
   } else if (childrenAD.length === 1) {
     const [{ node: child }] = childrenAD;
@@ -195,7 +195,7 @@ const translate = (v: VarAD): { node: Node; children: Child[] } => {
     } else if (op === "- (unary)") {
       return { node: { tag: "Unary", unop: "neg" }, children };
     } else {
-      throw Error(":(");
+      throw Error(":( #2");
     }
   } else if (childrenAD.length === 2) {
     const [{ node: left }, { node: right }] = childrenAD;
@@ -215,7 +215,7 @@ const translate = (v: VarAD): { node: Node; children: Child[] } => {
     } else if (op === "lt") {
       return { node: { tag: "Binary", binop: "<" }, children };
     } else {
-      throw Error(":(");
+      throw Error(":( #3");
     }
   } else if (childrenAD.length === 3) {
     const [{ node: cond }, { node: then }, { node: els }] = childrenAD;
@@ -229,10 +229,10 @@ const translate = (v: VarAD): { node: Node; children: Child[] } => {
         ],
       };
     } else {
-      throw Error(":(");
+      throw Error(":( #4");
     }
   } else {
-    throw Error(":(");
+    throw Error(":( #5");
   }
 };
 
@@ -315,11 +315,11 @@ export const fuzz = async (): Promise<void> => {
   fs.writeFileSync(
     "graph.json",
     stringifyGraph(
-      safe(ids.get(params.energyGraph), ":("),
+      safe(ids.get(params.energyGraph), ":( #6"),
       [...nodes.entries()],
       edges.map(([{ child, name }, parent]) => ({
-        v: safe(ids.get(child), ":("),
-        w: safe(ids.get(parent), ":("),
+        v: safe(ids.get(child), ":( #7"),
+        w: safe(ids.get(parent), ":( #8"),
         name,
       }))
     ),
@@ -345,10 +345,12 @@ export const fuzz = async (): Promise<void> => {
   );
 };
 
-const getGraph = (): { primary: Id; graph: graphlib.Graph } => {
+const getGraph = (
+  filename = "graph.json"
+): { primary: Id; graph: graphlib.Graph } => {
   const graph = new graphlib.Graph({ multigraph: true });
   const { primary, nodes, edges } = JSON.parse(
-    fs.readFileSync("graph.json", "utf8")
+    fs.readFileSync(filename, "utf8")
   );
   for (const [id, node] of Object.entries(nodes)) {
     graph.setNode(id, node);
@@ -520,19 +522,19 @@ const translateBack = (node: Node, children: Map<Edge, VarAD>): VarAD => {
       return markInput(varOf(node.val), node.index);
     }
     case "Unary": {
-      return translateUnary(node)(safe(children.get(undefined), ":("));
+      return translateUnary(node)(safe(children.get(undefined), ":( #9"));
     }
     case "Binary": {
       return translateBinary(node)(
-        safe(children.get("left"), ":("),
-        safe(children.get("right"), ":(")
+        safe(children.get("left"), ":( #10"),
+        safe(children.get("right"), ":( #11")
       );
     }
     case "Ternary": {
       return ifCond(
-        safe(children.get("cond"), ":("),
-        safe(children.get("then"), ":("),
-        safe(children.get("els"), ":(")
+        safe(children.get("cond"), ":( #12"),
+        safe(children.get("then"), ":( #13"),
+        safe(children.get("els"), ":( #14")
       );
     }
     case "Nary": {
@@ -543,7 +545,7 @@ const translateBack = (node: Node, children: Map<Edge, VarAD>): VarAD => {
       return translateNary(node)(params);
     }
     case "Debug": {
-      return debug(safe(children.get(undefined), ":("));
+      return debug(safe(children.get(undefined), ":( #15"));
     }
   }
 };
@@ -560,7 +562,7 @@ export const gradients = (): void => {
         reachable.add(id);
         const preds = graph.predecessors(id);
         if (!Array.isArray(preds)) {
-          throw Error(":(");
+          throw Error(":( #16");
         }
         for (const pred of preds) {
           queue.enqueue(pred);
@@ -582,12 +584,15 @@ export const gradients = (): void => {
       }
       const edges = graph.inEdges(id);
       if (!Array.isArray(edges)) {
-        throw Error(":(");
+        throw Error(":( #17");
       }
       const v = translateBack(
         node,
         new Map(
-          edges.map(({ v, name }) => [name as Edge, safe(varADs.get(v), ":(")])
+          edges.map(({ v, name }) => [
+            name as Edge,
+            safe(varADs.get(v), ":( #18"),
+          ])
         )
       );
       varADs.set(id, v);
@@ -597,7 +602,7 @@ export const gradients = (): void => {
     }
 
     const xs = xsVars.map(({ val }) => val);
-    const energyGraph = safe(varADs.get(primary), ":(");
+    const energyGraph = safe(varADs.get(primary), ":( #19");
     if (energyGraph.isInput) {
       continue;
     }
@@ -613,4 +618,44 @@ export const gradients = (): void => {
       `${JSON.stringify({ gradient: gradf(xs), primary: f(xs) }, null, 2)}\n`
     );
   }
+};
+
+export const shrunk = (): void => {
+  const { graph } = getGraph("graph_1396_shrunk.json");
+  const varADs = new Map<string, VarAD>();
+  const xsVars = [];
+  for (const id of graphlib.alg.topsort(graph)) {
+    const node: Node = graph.node(id);
+    const edges = graph.inEdges(id);
+    if (!Array.isArray(edges)) {
+      throw Error(":( #20");
+    }
+    const v = translateBack(
+      node,
+      new Map(
+        edges.map(({ v, name }) => [
+          name as Edge,
+          safe(varADs.get(v), ":( #21"),
+        ])
+      )
+    );
+    varADs.set(id, v);
+    if (v.isInput) {
+      xsVars[v.index] = v;
+    }
+  }
+
+  const xs = xsVars.map(({ val }) => val);
+  const energyGraph = safe(varADs.get("_0"), ":( #22");
+  const { f, gradf } = energyAndGradCompiled(
+    xs,
+    xsVars,
+    energyGraph,
+    undefined
+  );
+
+  fs.writeFileSync(
+    `output_1396_shrunk.json`,
+    `${JSON.stringify({ gradient: gradf(xs), primary: f(xs) }, null, 2)}\n`
+  );
 };

@@ -1,6 +1,6 @@
 require("global-jsdom/register");
-import { gradients } from "@penrose/core";
+import { shrunk } from "@penrose/core";
 
 (async () => {
-  gradients();
+  shrunk();
 })();
