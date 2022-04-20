@@ -1,6 +1,7 @@
 import { Queue } from "@datastructures-js/queue";
 import { examples, registry } from "@penrose/examples";
 import {
+  EPS_DENOM,
   genCode,
   makeGraph,
   primaryGraph,
@@ -125,9 +126,9 @@ export const fuzz = async (): Promise<void> => {
   );
 };
 
-const getGraph = (): graphlib.Graph => {
+const getGraph = (filename = "graph.json"): graphlib.Graph => {
   const graph = new graphlib.Graph({ multigraph: true });
-  const { nodes, edges } = JSON.parse(fs.readFileSync("graph.json", "utf8"));
+  const { nodes, edges } = JSON.parse(fs.readFileSync(filename, "utf8"));
   for (const [id, node] of Object.entries(nodes)) {
     graph.setNode(id, node);
   }
@@ -200,16 +201,44 @@ const translate = (node: ad.Node, children: Map<ad.Edge, VarAD>): VarAD => {
     }
     case "Unary": {
       const { unop } = node;
-      return { tag, unop, param: safe(children.get(undefined), ":(") };
+      const param = safe(children.get(undefined), ":(");
+      if (typeof param === "number") {
+        if (unop === "neg") {
+          return -param;
+        } else if (unop === "squared") {
+          return param * param;
+        } else if (unop === "inverse") {
+          return 1 / (param + EPS_DENOM);
+        } else {
+          return Math[unop](param);
+        }
+      }
+      return { tag, unop, param };
     }
     case "Binary": {
       const { binop } = node;
-      return {
-        tag,
-        binop,
-        left: safe(children.get("left"), ":("),
-        right: safe(children.get("right"), ":("),
-      };
+      const left = safe(children.get("left"), ":(");
+      const right = safe(children.get("right"), ":(");
+      if (typeof left === "number" && typeof right === "number") {
+        if (binop === "+") {
+          return left + right;
+        } else if (binop === "*") {
+          return left * right;
+        } else if (binop === "-") {
+          return left - right;
+        } else if (binop === "/") {
+          return left / right;
+        } else if (binop === "max") {
+          return Math.max(left, right);
+        } else if (binop === "min") {
+          return Math.min(left, right);
+        } else if (binop === "atan2") {
+          return Math.atan2(left, right);
+        } else if (binop === "pow") {
+          return Math.pow(left, right);
+        }
+      }
+      return { tag, binop, left, right };
     }
     case "Ternary": {
       return {
@@ -365,18 +394,13 @@ const noncommutative = new Set<ad.BinaryNode["binop"]>([
   "<",
 ]);
 
-export const pprint = (): void => {
-  const graph = getGraph();
-  const { varADs } = translateAll(graph);
-  const primary = "_1396";
-  const g = secondaryGraph([safe(varADs.get(primary), ":(")]);
-
+const pprintGraph = (graph: graphlib.Graph): string => {
   const lines = ["digraph {"];
-  for (const id of g.graph.nodes()) {
-    lines.push(`  ${id} [label = "${pprintNode(g.graph.node(id))}"];`);
+  for (const id of graph.nodes()) {
+    lines.push(`  ${id} [label = "${pprintNode(graph.node(id))}"];`);
   }
-  for (const { v, w, name } of g.graph.edges()) {
-    const node = g.graph.node(w);
+  for (const { v, w, name } of graph.edges()) {
+    const node = graph.node(w);
     if (
       name !== undefined &&
       typeof node !== "number" &&
@@ -389,5 +413,48 @@ export const pprint = (): void => {
     }
   }
   lines.push("}", "");
-  fs.writeFileSync(`graph${primary}.gv`, lines.join("\n"), "utf8");
+  return lines.join("\n");
+};
+
+export const pprint = (): void => {
+  const graph = getGraph();
+  const { varADs } = translateAll(graph);
+  const primary = "_1396";
+  const g = secondaryGraph([safe(varADs.get(primary), ":(")]);
+  fs.writeFileSync(`graph${primary}.gv`, pprintGraph(g.graph), "utf8");
+};
+
+export const shrink = (): void => {
+  const graph = getGraph("graph_1396.json");
+  for (const id of graph.sources()) {
+    const node: ad.Node = graph.node(id);
+    if (typeof node !== "number" && node.tag === "Input") {
+      if (node.index === 30) {
+        node.index = 0;
+      } else {
+        graph.setNode(id, (node as ad.Input).val); // HACK
+      }
+    }
+  }
+  const { varADs, inputs } = translateAll(graph);
+  const primaryVar = safe(varADs.get("_0"), ":(");
+
+  const g2 = secondaryGraph([primaryVar]);
+  fs.writeFileSync("graph_1396_shrunk.json", stringifyGraph(g2, inputs));
+  fs.writeFileSync(`graph_1396_shrunk.gv`, pprintGraph(g2.graph), "utf8");
+
+  const g = primaryGraph(primaryVar);
+  const f = genCode(g);
+  const { primary, gradient } = f(inputs);
+  fs.writeFileSync(
+    "output_1396_shrunk.json",
+    `${JSON.stringify(
+      {
+        gradient: inputs.map((x, i) => (i in gradient ? gradient[i] : 0)),
+        primary,
+      },
+      null,
+      2
+    )}\n`
+  );
 };
