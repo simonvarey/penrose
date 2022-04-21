@@ -261,10 +261,10 @@ const stringifyGraph = (
 };
 
 const fuzz = async (): Promise<void> => {
-  const setTheory = examples["set-theory-domain"];
-  const dslSet = setTheory["setTheory.dsl"];
-  const styVenn = setTheory["venn.sty"];
-  const subTree = setTheory["tree.sub"];
+  const setTheory = examples["graph-domain"];
+  const dslSet = setTheory["graph-theory.dsl"];
+  const styVenn = setTheory["disjoint-rect-line-horiz.sty"];
+  const subTree = setTheory["small-graph.sub"];
   const variation = safe(
     registry.trios.find(
       ({ substance, style }) => substance === "tree" && style === "venn"
@@ -678,4 +678,4 @@ const genSqrt = (): void => {
   );
 };
 
-export const main = genShrunk;
+export const main = fuzz;
