@@ -211,7 +211,11 @@ export interface Outputs<T> {
   secondary: T[];
 }
 
-export type Compiled = (inputs: number[]) => Outputs<number>;
+export interface OutputsWithCode extends Outputs<number> {
+  code: string;
+}
+
+export type Compiled = (inputs: number[]) => OutputsWithCode;
 
 //#endregion
 

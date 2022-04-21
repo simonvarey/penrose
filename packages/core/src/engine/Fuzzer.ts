@@ -3,10 +3,12 @@ import { examples, registry } from "@penrose/examples";
 import {
   EPS_DENOM,
   genCode,
+  input,
   makeGraph,
   primaryGraph,
   secondaryGraph,
 } from "engine/Autodiff";
+import { sqrt } from "engine/AutodiffFunctions";
 import * as fs from "fs";
 import * as graphlib from "graphlib";
 import { compileTrio, prepareState, resample, showError } from "index";
@@ -51,7 +53,7 @@ const stringifyGraph = (
   return strings.join("");
 };
 
-export const fuzz = async (): Promise<void> => {
+const fuzz = async (): Promise<void> => {
   const setTheory = examples["set-theory-domain"];
   const dslSet = setTheory["setTheory.dsl"];
   const styVenn = setTheory["venn.sty"];
@@ -138,7 +140,7 @@ const getGraph = (filename = "graph.json"): graphlib.Graph => {
   return graph;
 };
 
-export const layers = (): void => {
+const layers = (): void => {
   const graph = getGraph();
 
   const depths = new Map<string, number>();
@@ -287,7 +289,7 @@ const translateAll = (
   return { varADs, inputs };
 };
 
-export const gradients = (): void => {
+const gradients = (): void => {
   const graph = getGraph();
   const { varADs, inputs } = translateAll(graph);
   for (const [id, v] of varADs) {
@@ -347,7 +349,7 @@ const different = new Set([
   "_946",
 ]);
 
-export const rank = (): void => {
+const rank = (): void => {
   const layers: string[][] = JSON.parse(fs.readFileSync("layers.json", "utf8"));
   const ranks: { [layer: number]: string[] } = {};
   layers.forEach((layer, i) => {
@@ -416,7 +418,7 @@ const pprintGraph = (graph: graphlib.Graph): string => {
   return lines.join("\n");
 };
 
-export const pprint = (): void => {
+const pprint = (): void => {
   const graph = getGraph();
   const { varADs } = translateAll(graph);
   const primary = "_1396";
@@ -424,7 +426,7 @@ export const pprint = (): void => {
   fs.writeFileSync(`graph${primary}.gv`, pprintGraph(g.graph), "utf8");
 };
 
-export const shrink = (): void => {
+const shrink = (): void => {
   const graph = getGraph("graph_1396.json");
   for (const id of graph.sources()) {
     const node: ad.Node = graph.node(id);
@@ -458,3 +460,12 @@ export const shrink = (): void => {
     )}\n`
   );
 };
+
+const genSqrt = (): void => {
+  fs.writeFileSync(
+    "sqrt.js",
+    genCode(primaryGraph(sqrt(input({ index: 0, val: 0 }))))([0]).code
+  );
+};
+
+export const main = genSqrt;

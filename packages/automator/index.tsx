@@ -1,6 +1,6 @@
 require("global-jsdom/register");
-import { shrink } from "@penrose/core";
+import { main } from "@penrose/core";
 
 (async () => {
-  shrink();
+  main();
 })();
