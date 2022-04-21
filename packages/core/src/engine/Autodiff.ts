@@ -926,7 +926,7 @@ export const genCode = ({
     `secondary: [${secondary.join(", ")}]`,
   ];
   stmts.push(`return { ${fields.join(", ")} };`);
-  const code = `(inputs) => {\n  ${stmts.join("\n  ")}\n}\n`;
+  const code = `(inputs) => {\n  ${stmts.join("\n  ")}\n};\n`;
   const f = new Function("inputs", stmts.join("\n"));
   return (inputs) => ({ ...f(inputs), code });
 };

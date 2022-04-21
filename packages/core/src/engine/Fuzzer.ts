@@ -3,12 +3,10 @@ import { examples, registry } from "@penrose/examples";
 import {
   EPS_DENOM,
   genCode,
-  input,
   makeGraph,
   primaryGraph,
   secondaryGraph,
 } from "engine/Autodiff";
-import { add, mul, sqrt, squared } from "engine/AutodiffFunctions";
 import * as fs from "fs";
 import * as graphlib from "graphlib";
 import { compileTrio, prepareState, resample, showError } from "index";
@@ -461,12 +459,16 @@ const shrink = (): void => {
   );
 };
 
-const genSqrt = (): void => {
-  const x0 = input({ index: 0, val: 0 });
+const genShrunk = (): void => {
+  const graph = getGraph("graph_1396_shrunk.json");
+  const { varADs, inputs } = translateAll(graph);
+  const primary = safe(varADs.get("_0"), ":(");
   fs.writeFileSync(
-    "sqrt.js",
-    genCode(primaryGraph(sqrt(add(squared(x0), mul(x0, x0)))))([0]).code
+    "graph_1396_shrunk.js",
+    `const f = ${
+      genCode(primaryGraph(primary))([0]).code
+    }\nconsole.log(f(${JSON.stringify(inputs)}));\n`
   );
 };
 
-export const main = genSqrt;
+export const main = genShrunk;
