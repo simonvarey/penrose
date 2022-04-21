@@ -1,17 +1,10 @@
 import { Queue } from "@datastructures-js/queue";
 import { examples, registry } from "@penrose/examples";
-import {
-  EPS_DENOM,
-  genCode,
-  makeGraph,
-  primaryGraph,
-  secondaryGraph,
-} from "engine/Autodiff";
+import { genCode, makeGraph, secondaryGraph } from "engine/Autodiff";
 import * as fs from "fs";
 import * as graphlib from "graphlib";
 import { compileTrio, prepareState, resample, showError } from "index";
 import * as ad from "types/ad";
-import { VarAD } from "types/ad";
 import { safe } from "utils/Util";
 
 const stringifyNode = (node: ad.Node, inputs: number[]): string => {
@@ -52,10 +45,10 @@ const stringifyGraph = (
 };
 
 const fuzz = async (): Promise<void> => {
-  const setTheory = examples["set-theory-domain"];
-  const dslSet = setTheory["setTheory.dsl"];
-  const styVenn = setTheory["venn.sty"];
-  const subTree = setTheory["tree.sub"];
+  const setTheory = examples["graph-domain"];
+  const dslSet = setTheory["graph-theory.dsl"];
+  const styVenn = setTheory["disjoint-rect-line-horiz.sty"];
+  const subTree = setTheory["small-graph.sub"];
   const variation = safe(
     registry.trios.find(
       ({ substance, style }) => substance === "tree" && style === "venn"
@@ -189,124 +182,124 @@ const layers = (): void => {
 
 const naryEdgeToIndex = (name: ad.NaryEdge) => parseInt(name, 10);
 
-const translate = (node: ad.Node, children: Map<ad.Edge, VarAD>): VarAD => {
-  if (typeof node === "number") {
-    return node;
-  }
-  const { tag } = node;
-  switch (tag) {
-    case "Input": {
-      const { index, val } = node as ad.Input; // HACK
-      return { tag, index, val };
-    }
-    case "Unary": {
-      const { unop } = node;
-      const param = safe(children.get(undefined), ":(");
-      if (typeof param === "number") {
-        if (unop === "neg") {
-          return -param;
-        } else if (unop === "squared") {
-          return param * param;
-        } else if (unop === "inverse") {
-          return 1 / (param + EPS_DENOM);
-        } else {
-          return Math[unop](param);
-        }
-      }
-      return { tag, unop, param };
-    }
-    case "Binary": {
-      const { binop } = node;
-      const left = safe(children.get("left"), ":(");
-      const right = safe(children.get("right"), ":(");
-      if (typeof left === "number" && typeof right === "number") {
-        if (binop === "+") {
-          return left + right;
-        } else if (binop === "*") {
-          return left * right;
-        } else if (binop === "-") {
-          return left - right;
-        } else if (binop === "/") {
-          return left / right;
-        } else if (binop === "max") {
-          return Math.max(left, right);
-        } else if (binop === "min") {
-          return Math.min(left, right);
-        } else if (binop === "atan2") {
-          return Math.atan2(left, right);
-        } else if (binop === "pow") {
-          return Math.pow(left, right);
-        }
-      }
-      return { tag, binop, left, right };
-    }
-    case "Ternary": {
-      return {
-        tag,
-        cond: safe(children.get("cond"), ":("),
-        then: safe(children.get("then"), ":("),
-        els: safe(children.get("els"), ":("),
-      };
-    }
-    case "Nary": {
-      const { op } = node;
-      const params: VarAD[] = [];
-      for (const [i, v] of children) {
-        params[naryEdgeToIndex(i as ad.NaryEdge)] = v;
-      }
-      return { tag, op, params };
-    }
-    case "Debug": {
-      const { info } = node;
-      return { tag, info, node: safe(children.get(undefined), ":(") };
-    }
-  }
-};
+// const translate = (node: ad.Node, children: Map<ad.Edge, VarAD>): VarAD => {
+//   if (typeof node === "number") {
+//     return node;
+//   }
+//   const { tag } = node;
+//   switch (tag) {
+//     case "Input": {
+//       const { index, val } = node as ad.Input; // HACK
+//       return { tag, index, val };
+//     }
+//     case "Unary": {
+//       const { unop } = node;
+//       const param = safe(children.get(undefined), ":(");
+//       if (typeof param === "number") {
+//         if (unop === "neg") {
+//           return -param;
+//         } else if (unop === "squared") {
+//           return param * param;
+//         } else if (unop === "inverse") {
+//           return 1 / (param + EPS_DENOM);
+//         } else {
+//           return Math[unop](param);
+//         }
+//       }
+//       return { tag, unop, param };
+//     }
+//     case "Binary": {
+//       const { binop } = node;
+//       const left = safe(children.get("left"), ":(");
+//       const right = safe(children.get("right"), ":(");
+//       if (typeof left === "number" && typeof right === "number") {
+//         if (binop === "+") {
+//           return left + right;
+//         } else if (binop === "*") {
+//           return left * right;
+//         } else if (binop === "-") {
+//           return left - right;
+//         } else if (binop === "/") {
+//           return left / right;
+//         } else if (binop === "max") {
+//           return Math.max(left, right);
+//         } else if (binop === "min") {
+//           return Math.min(left, right);
+//         } else if (binop === "atan2") {
+//           return Math.atan2(left, right);
+//         } else if (binop === "pow") {
+//           return Math.pow(left, right);
+//         }
+//       }
+//       return { tag, binop, left, right };
+//     }
+//     case "Ternary": {
+//       return {
+//         tag,
+//         cond: safe(children.get("cond"), ":("),
+//         then: safe(children.get("then"), ":("),
+//         els: safe(children.get("els"), ":("),
+//       };
+//     }
+//     case "Nary": {
+//       const { op } = node;
+//       const params: VarAD[] = [];
+//       for (const [i, v] of children) {
+//         params[naryEdgeToIndex(i as ad.NaryEdge)] = v;
+//       }
+//       return { tag, op, params };
+//     }
+//     case "Debug": {
+//       const { info } = node;
+//       return { tag, info, node: safe(children.get(undefined), ":(") };
+//     }
+//   }
+// };
 
-const translateAll = (
-  graph: graphlib.Graph
-): { varADs: Map<string, VarAD>; inputs: number[] } => {
-  const varADs = new Map<string, VarAD>();
-  const inputs = [];
-  for (const id of graphlib.alg.topsort(graph)) {
-    const edges = graph.inEdges(id);
-    if (!Array.isArray(edges)) {
-      throw Error(":(");
-    }
-    const v = translate(
-      graph.node(id),
-      new Map(
-        edges.map(({ v, name }) => [name as ad.Edge, safe(varADs.get(v), ":(")])
-      )
-    );
-    varADs.set(id, v);
-    if (typeof v !== "number" && v.tag === "Input") {
-      inputs[v.index] = v.val;
-    }
-  }
-  return { varADs, inputs };
-};
+// const translateAll = (
+//   graph: graphlib.Graph
+// ): { varADs: Map<string, VarAD>; inputs: number[] } => {
+//   const varADs = new Map<string, VarAD>();
+//   const inputs = [];
+//   for (const id of graphlib.alg.topsort(graph)) {
+//     const edges = graph.inEdges(id);
+//     if (!Array.isArray(edges)) {
+//       throw Error(":(");
+//     }
+//     const v = translate(
+//       graph.node(id),
+//       new Map(
+//         edges.map(({ v, name }) => [name as ad.Edge, safe(varADs.get(v), ":(")])
+//       )
+//     );
+//     varADs.set(id, v);
+//     if (typeof v !== "number" && v.tag === "Input") {
+//       inputs[v.index] = v.val;
+//     }
+//   }
+//   return { varADs, inputs };
+// };
 
-const gradients = (): void => {
-  const graph = getGraph();
-  const { varADs, inputs } = translateAll(graph);
-  for (const [id, v] of varADs) {
-    const g = primaryGraph(v);
-    const f = genCode(g);
-    const { primary, gradient } = f(inputs);
-    fs.writeFileSync(
-      `outputs/${id}.json`,
-      `${JSON.stringify(
-        {
-          gradient: inputs.map((x, i) => (i in gradient ? gradient[i] : 0)),
-          primary,
-        },
-        null,
-        2
-      )}\n`
-    );
-  }
-};
+// const gradients = (): void => {
+//   const graph = getGraph();
+//   const { varADs, inputs } = translateAll(graph);
+//   for (const [id, v] of varADs) {
+//     const g = primaryGraph(v);
+//     const f = genCode(g);
+//     const { primary, gradient } = f(inputs);
+//     fs.writeFileSync(
+//       `outputs/${id}.json`,
+//       `${JSON.stringify(
+//         {
+//           gradient: inputs.map((x, i) => (i in gradient ? gradient[i] : 0)),
+//           primary,
+//         },
+//         null,
+//         2
+//       )}\n`
+//     );
+//   }
+// };
 
 // git checkout delta-main -- outputs/
 // git status --porcelain
@@ -416,59 +409,59 @@ const pprintGraph = (graph: graphlib.Graph): string => {
   return lines.join("\n");
 };
 
-const pprint = (): void => {
-  const graph = getGraph();
-  const { varADs } = translateAll(graph);
-  const primary = "_1396";
-  const g = secondaryGraph([safe(varADs.get(primary), ":(")]);
-  fs.writeFileSync(`graph${primary}.gv`, pprintGraph(g.graph), "utf8");
-};
+// const pprint = (): void => {
+//   const graph = getGraph();
+//   const { varADs } = translateAll(graph);
+//   const primary = "_1396";
+//   const g = secondaryGraph([safe(varADs.get(primary), ":(")]);
+//   fs.writeFileSync(`graph${primary}.gv`, pprintGraph(g.graph), "utf8");
+// };
 
-const shrink = (): void => {
-  const graph = getGraph("graph_1396.json");
-  for (const id of graph.sources()) {
-    const node: ad.Node = graph.node(id);
-    if (typeof node !== "number" && node.tag === "Input") {
-      if (node.index === 30) {
-        node.index = 0;
-      } else {
-        graph.setNode(id, (node as ad.Input).val); // HACK
-      }
-    }
-  }
-  const { varADs, inputs } = translateAll(graph);
-  const primaryVar = safe(varADs.get("_0"), ":(");
+// const shrink = (): void => {
+//   const graph = getGraph("graph_1396.json");
+//   for (const id of graph.sources()) {
+//     const node: ad.Node = graph.node(id);
+//     if (typeof node !== "number" && node.tag === "Input") {
+//       if (node.index === 30) {
+//         node.index = 0;
+//       } else {
+//         graph.setNode(id, (node as ad.Input).val); // HACK
+//       }
+//     }
+//   }
+//   const { varADs, inputs } = translateAll(graph);
+//   const primaryVar = safe(varADs.get("_0"), ":(");
 
-  const g2 = secondaryGraph([primaryVar]);
-  fs.writeFileSync("graph_1396_shrunk.json", stringifyGraph(g2, inputs));
-  fs.writeFileSync(`graph_1396_shrunk.gv`, pprintGraph(g2.graph), "utf8");
+//   const g2 = secondaryGraph([primaryVar]);
+//   fs.writeFileSync("graph_1396_shrunk.json", stringifyGraph(g2, inputs));
+//   fs.writeFileSync(`graph_1396_shrunk.gv`, pprintGraph(g2.graph), "utf8");
 
-  const g = primaryGraph(primaryVar);
-  const f = genCode(g);
-  const { primary, gradient } = f(inputs);
-  fs.writeFileSync(
-    "output_1396_shrunk.json",
-    `${JSON.stringify(
-      {
-        gradient: inputs.map((x, i) => (i in gradient ? gradient[i] : 0)),
-        primary,
-      },
-      null,
-      2
-    )}\n`
-  );
-};
+//   const g = primaryGraph(primaryVar);
+//   const f = genCode(g);
+//   const { primary, gradient } = f(inputs);
+//   fs.writeFileSync(
+//     "output_1396_shrunk.json",
+//     `${JSON.stringify(
+//       {
+//         gradient: inputs.map((x, i) => (i in gradient ? gradient[i] : 0)),
+//         primary,
+//       },
+//       null,
+//       2
+//     )}\n`
+//   );
+// };
 
-const genShrunk = (): void => {
-  const graph = getGraph("graph_1396_shrunk.json");
-  const { varADs, inputs } = translateAll(graph);
-  const primary = safe(varADs.get("_0"), ":(");
-  fs.writeFileSync(
-    "graph_1396_shrunk.js",
-    `const f = ${
-      genCode(primaryGraph(primary))([0]).code
-    }\nconsole.log(f(${JSON.stringify(inputs)}).gradient);\n`
-  );
-};
+// const genShrunk = (): void => {
+//   const graph = getGraph("graph_1396_shrunk.json");
+//   const { varADs, inputs } = translateAll(graph);
+//   const primary = safe(varADs.get("_0"), ":(");
+//   fs.writeFileSync(
+//     "graph_1396_shrunk.js",
+//     `const f = ${
+//       genCode(primaryGraph(primary))([0]).code
+//     }\nconsole.log(f(${JSON.stringify(inputs)}).gradient);\n`
+//   );
+// };
 
-export const main = genShrunk;
+export const main = fuzz;
