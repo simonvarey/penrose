@@ -8,7 +8,7 @@ import {
   primaryGraph,
   secondaryGraph,
 } from "engine/Autodiff";
-import { sqrt } from "engine/AutodiffFunctions";
+import { add, mul, sqrt, squared } from "engine/AutodiffFunctions";
 import * as fs from "fs";
 import * as graphlib from "graphlib";
 import { compileTrio, prepareState, resample, showError } from "index";
@@ -462,9 +462,10 @@ const shrink = (): void => {
 };
 
 const genSqrt = (): void => {
+  const x0 = input({ index: 0, val: 0 });
   fs.writeFileSync(
     "sqrt.js",
-    genCode(primaryGraph(sqrt(input({ index: 0, val: 0 }))))([0]).code
+    genCode(primaryGraph(sqrt(add(squared(x0), mul(x0, x0)))))([0]).code
   );
 };
 
