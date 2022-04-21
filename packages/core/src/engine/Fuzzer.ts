@@ -9,6 +9,10 @@ import { safe } from "utils/Util";
 
 const stringifyNode = (node: ad.Node, inputs: number[]): string => {
   let obj: any = node;
+  if (typeof obj === "object" && "i" in obj) {
+    obj = { ...obj };
+    delete obj.i;
+  }
   if (typeof node !== "number" && node.tag === "Input") {
     obj = { ...obj, val: inputs[node.index] };
   }
