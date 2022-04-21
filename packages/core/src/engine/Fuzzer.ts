@@ -61,7 +61,7 @@ import { compileTrio, prepareState, showError } from "index";
 import { VarAD } from "types/ad";
 import { safe } from "utils/Util";
 
-export type Node =
+type Node =
   | ConstNode
   | InputNode
   | UnaryNode
@@ -70,15 +70,15 @@ export type Node =
   | NaryNode
   | DebugNode;
 
-export type ConstNode = number;
+type ConstNode = number;
 
-export interface InputNode {
+interface InputNode {
   tag: "Input";
   index: number;
   val: number;
 }
 
-export interface UnaryNode {
+interface UnaryNode {
   tag: "Unary";
   unop:
     | "neg"
@@ -112,7 +112,7 @@ export interface UnaryNode {
     | "trunc";
 }
 
-export interface BinaryNode {
+interface BinaryNode {
   tag: "Binary";
   binop:
     | "+"
@@ -130,26 +130,26 @@ export interface BinaryNode {
     | "||";
 }
 
-export interface TernaryNode {
+interface TernaryNode {
   tag: "Ternary";
 }
 
-export interface NaryNode {
+interface NaryNode {
   tag: "Nary";
   op: "addN" | "maxN" | "minN";
 }
 
-export interface DebugNode {
+interface DebugNode {
   tag: "Debug";
   info: string;
 }
 
-export type Edge = UnaryEdge | BinaryEdge | TernaryEdge | NaryEdge | DebugEdge;
-export type UnaryEdge = undefined;
-export type BinaryEdge = "left" | "right";
-export type TernaryEdge = "cond" | "then" | "els";
-export type NaryEdge = `${number}`;
-export type DebugEdge = undefined;
+type Edge = UnaryEdge | BinaryEdge | TernaryEdge | NaryEdge | DebugEdge;
+type UnaryEdge = undefined;
+type BinaryEdge = "left" | "right";
+type TernaryEdge = "cond" | "then" | "els";
+type NaryEdge = `${number}`;
+type DebugEdge = undefined;
 
 type Id = `_${number}`;
 
@@ -260,7 +260,7 @@ const stringifyGraph = (
   return strings.join("");
 };
 
-export const fuzz = async (): Promise<void> => {
+const fuzz = async (): Promise<void> => {
   const setTheory = examples["set-theory-domain"];
   const dslSet = setTheory["setTheory.dsl"];
   const styVenn = setTheory["venn.sty"];
@@ -550,7 +550,7 @@ const translateBack = (node: Node, children: Map<Edge, VarAD>): VarAD => {
   }
 };
 
-export const gradients = (): void => {
+const gradients = (): void => {
   const { graph } = getGraph();
   const sorted = graphlib.alg.topsort(graph);
   for (const primary of graph.nodes()) {
@@ -620,7 +620,7 @@ export const gradients = (): void => {
   }
 };
 
-export const shrunk = (): void => {
+const shrunk = (): void => {
   const { graph } = getGraph("graph_1396_shrunk.json");
   const varADs = new Map<string, VarAD>();
   const xsVars = [];
@@ -659,3 +659,21 @@ export const shrunk = (): void => {
     `${JSON.stringify({ gradient: gradf(xs), primary: f(xs) }, null, 2)}\n`
   );
 };
+
+const genSqrt = (): void => {
+  const x0 = markInput(varOf(0), 0);
+  const { progInputs, progStr } = energyAndGradCompiled(
+    [0],
+    [x0],
+    sqrt(x0),
+    undefined
+  );
+  fs.writeFileSync(
+    "sqrt.js",
+    `(${progInputs.join(", ")}) => {\n  ${progStr
+      .split("\n")
+      .join("\n  ")}\n}\n`
+  );
+};
+
+export const main = genSqrt;

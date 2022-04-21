@@ -630,7 +630,7 @@ export const _genCode = (
   logAD.trace("overall function generated (g):", g);
   clearVisitedNodes(inputsNew.concat(outputs));
 
-  return g;
+  return { g, progInputs, progStr };
 };
 
 // NOTE: Mutates z to store that the node was visited, and what its name is
@@ -1092,10 +1092,14 @@ export const energyAndGradCompiled = (
     graphs.weight
   );
 
+  const { progInputs, progStr } = gradGen;
+
   // Return the energy and grad on the input, as well as updated energy graph
   return {
     graphs,
     f: f0,
-    gradf: gradGen,
+    gradf: gradGen.g,
+    progInputs,
+    progStr,
   };
 };
