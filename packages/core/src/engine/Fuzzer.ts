@@ -665,7 +665,7 @@ const genSqrt = (): void => {
   const { progInputs, progStr } = energyAndGradCompiled(
     [0],
     [x0],
-    sqrt(x0),
+    sqrt(add(squared(x0), mul(x0, x0))),
     undefined
   );
   fs.writeFileSync(
