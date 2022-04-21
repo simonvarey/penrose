@@ -278,4 +278,4 @@ const f = (inputs) => {
   return { gradient: [_256], primary: _0, secondary: [] };
 };
 
-console.log(f([85.61877344875752]));
+console.log(f([85.61877344875752]).gradient);

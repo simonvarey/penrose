@@ -467,7 +467,7 @@ const genShrunk = (): void => {
     "graph_1396_shrunk.js",
     `const f = ${
       genCode(primaryGraph(primary))([0]).code
-    }\nconsole.log(f(${JSON.stringify(inputs)}));\n`
+    }\nconsole.log(f(${JSON.stringify(inputs)}).gradient);\n`
   );
 };
 
