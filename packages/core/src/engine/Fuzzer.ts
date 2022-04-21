@@ -620,7 +620,7 @@ const gradients = (): void => {
   }
 };
 
-const shrunk = (): void => {
+const genShrunk = (): void => {
   const { graph } = getGraph("graph_1396_shrunk.json");
   const varADs = new Map<string, VarAD>();
   const xsVars = [];
@@ -647,7 +647,7 @@ const shrunk = (): void => {
 
   const xs = xsVars.map(({ val }) => val);
   const energyGraph = safe(varADs.get("_0"), ":( #22");
-  const { f, gradf } = energyAndGradCompiled(
+  const { progInputs, progStr } = energyAndGradCompiled(
     xs,
     xsVars,
     energyGraph,
@@ -655,8 +655,10 @@ const shrunk = (): void => {
   );
 
   fs.writeFileSync(
-    `output_1396_shrunk.json`,
-    `${JSON.stringify({ gradient: gradf(xs), primary: f(xs) }, null, 2)}\n`
+    `graph_1396_shrunk.js`,
+    `const f = (${progInputs.join(", ")}) => {\n  ${progStr
+      .split("\n")
+      .join("\n  ")}\n};\n\nconsole.log(f(${xs.join(", ")}));\n`
   );
 };
 
@@ -676,4 +678,4 @@ const genSqrt = (): void => {
   );
 };
 
-export const main = genSqrt;
+export const main = genShrunk;
