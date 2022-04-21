@@ -8,8 +8,7 @@ const f = (x0) => {
   const x15 = x9 + x14;
   const x16 = x8 - x15;
   const x17 = 104.1356593846063;
-  const x18 = x12 / 2;
-  const x19 = x9 + x18;
+  const x19 = x9 + x13;
   const x20 = x17 - x19;
   const x21 = x8 - x19;
   const x22 = x17 - x15;
@@ -37,13 +36,11 @@ const f = (x0) => {
   const x58 = x52 * x52;
   const x59 = 276.0205668753225;
   const x60 = 2.6937268255290405;
-  const x61 = x12 / 2;
-  const x62 = -x61;
+  const x62 = -x13;
   const x63 = x60 + x62;
   const x64 = x59 - x63;
   const x65 = 306.6805668753226;
-  const x66 = x12 / 2;
-  const x67 = x60 + x66;
+  const x67 = x60 + x13;
   const x68 = x65 - x67;
   const x69 = x59 - x67;
   const x70 = x65 - x63;
